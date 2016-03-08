@@ -1,0 +1,66 @@
+<div class="white-background res-card-container mb30">
+	<div class="row">
+		<div class="tenderSendRequests-scope">
+			<div class="title">История тендера и поданные заявки</div><!-- /.title -->
+
+			<div class="list-block date delimiter-bottom">
+				<div class="key">Дата создания тендера</div><!-- /.key -->
+				<div class="value"><%=tenderSendRequests.date%></div><!-- /.value -->
+			</div><!-- /.list-block -->
+
+			<h3 class="h3">Поданные заявки</h3>
+
+			<div class="requests-wrapper">
+			<% _.each(tenderSendRequests.requests, function(item){%>
+			<div class="list-block pb0">
+
+				<div class="list-item">
+					<div class="key"><%=item.name%>"</div><!-- /.key -->
+				</div><!-- /.list-item -->
+					<div class="key">Предложенная стоимость</div><!-- /.key -->
+					<div class="value"><%=item.price%> RES</div><!-- /.key -->				
+				<div class="list-item">
+					<div class="key">Предложенный срок выполнения</div><!-- /.key -->
+					<div class="value"><%=item.deadline%></div><!-- /.key -->
+				</div><!-- /.list-item -->		
+				<%if(item.images != null){%>
+				<div class="list-item">
+					<div class="key">Изображения</div><!-- /.key -->
+					<div class="value images">
+					<% _.each(item.images, function(item, key){%>
+						<a class="image" href="<%=item.image%>" style="background-image: url('<%=item.thumbImage200x200%>')"></a><!-- /.image -->
+					<%});%>
+					</div><!-- /.key -->
+				</div><!-- /.list-item -->
+				<%}%>
+			</div><!-- /.list-block -->
+			<%});%>
+			</div>
+			<div class="list-block">
+				<a class="showMore links-target-self res-link-dash">Показать еще</a><!-- /.showMore -->
+			</div><!-- /.list-block -->
+
+			<div class="list-block delimiter-top">
+				<div class="key h3">Тендер завершен</div><!-- /.key -->
+				<div class="value"><%=tenderSendRequests.winner.endDate%></div><!-- /.value -->
+			</div><!-- /.list-block -->
+			<div class="list-block delimiter-top">
+				<div class="key h3">Заявка победитель</div><!-- /.key -->
+			</div><!-- /.list-block -->
+
+			<div class="list-block pt0">
+
+				<div class="list-item">
+					<div class="key"><%=tenderSendRequests.winner.name%></div><!-- /.key -->
+				</div><!-- /.list-item -->
+					<div class="key">Предложенная стоимость</div><!-- /.key -->
+					<div class="value"><%=tenderSendRequests.winner.price%> RES</div><!-- /.key -->				
+				<div class="list-item">
+					<div class="key">Предложенный срок выполнения</div><!-- /.key -->
+					<div class="value"><%=tenderSendRequests.winner.deadline%></div><!-- /.key -->
+				</div><!-- /.list-item -->		
+			</div><!-- /.list-block -->
+
+		</div><!-- /.tenderSendRequests-scope -->
+	</div><!-- /.row -->
+</div><!-- /.form container -->

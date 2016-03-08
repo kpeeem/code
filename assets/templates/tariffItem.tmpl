@@ -1,0 +1,14 @@
+<% _.each(tariffs, function(tariff) { %>
+<div class="col-md-4">
+    <div class="res-card-container res_item_tariff p0 mg-b30 p-b20">
+        <div class="res_icon_tariff">
+            <img src="<%=tariff.img%>">
+        </div>
+        <div class="res_header_tariff"><%=tariff.header%></div>
+        <div class="res_title_tariff"><%=tariff.text%></div>
+        <div class="res_separator_tariff"><img src="/media/media/res.svg"></div>
+        <div class="res_info_tariff"><%=tariff.help%></div>
+        <a class="res_btn_tariff" data-name-tariff="<%= tariff.nameTariff %>">Выбрать</a>
+    </div>
+</div>
+<% }); %>

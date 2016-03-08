@@ -1,0 +1,36 @@
+<div class="container tenders-scope">
+	<div class="title-container">Тендеры</div><!-- /.title-container -->
+		<% _.each(tenders, function(tender,key) { %>  
+			<div class="res-card tenders">
+
+					<div class="tender" style="background-image: url(<%=tender.image%>)">
+			            <div class="title"><%=tender.name%></div><!-- /.title -->
+			            <div class="description"><%=tender.title%></div><!-- /.description -->
+
+			            <ul class="categories">
+							<% _.each(tender.categories, function(category,key) { %>  
+								<li class="icon <%=category.icon%>"><%=category.name%></li>
+							<% }); %>
+			            </ul>
+			            <div class="table">
+						 	<div class="row-table">
+						 		<div class="cell key">Максимальная стоимость</div><!-- /.cell key -->
+						 		<div class="cell value"><%=tender.maxPrice%> RES</div><!-- /.cell value -->
+						 	</div><!-- /.row-table -->
+
+						 	<div class="row-table">
+						 		<div class="cell key">Дата завершения <br>приема заявок</div><!-- /.cell key -->
+						 		<div class="cell value"><%=tender.dateRequestDeadline%></div><!-- /.cell value -->
+						 	</div><!-- /.row-table -->
+
+						 	<div class="row-table">
+						 		<div class="cell key">Дата завершения тендера</div><!-- /.cell key -->
+						 		<div class="cell value"><%=tender.dateDeadline%></div><!-- /.cell value -->
+						 	</div><!-- /.row-table -->
+						 </div><!-- /.table -->
+			            <a href="#tender/<%=tender.pk%>" class="btn res-button-yellow res-button-big">Подробнее</a><!-- /.btn -->
+			        </div><!-- /.background -->
+					
+			</div><!-- /.res-card tenders -->
+		<% }); %>
+</div><!-- /.container -->

@@ -1,0 +1,36 @@
+<div class="col-md-12 form-group res-fields">
+    <label class="control-label">Наименование компании</label>
+    <input type="text" name="legal_name" class="form-control" disabled value="<%= legal_name %>">
+
+    <div class="res_error">Подтвердите, что указано корректное наименование юридического лица</div>
+</div>
+<div class="col-md-12 form-group res-fields">
+    <label class="control-label">Генеральный директор</label>
+    <input type="text" name="ceo" class="form-control" disabled value="<%= ceo %>">
+
+    <div class="res_error">Пожалуйста, подтвердите, что указано корректное ФИО</div>
+</div>
+<div class="col-md-12 form-group res-fields">
+    <label class="control-label">Юридический адрес</label>
+    <input type="text" name="legal_address" class="form-control" disabled value="<%= legal_address %>">
+
+    <div class="res_error">Пожалуйста, подтвердите, что указан корректный юридический адрес</div>
+</div>
+<div class="col-md-12 add_passport_user">
+    <div class="separator_mini"></div>
+    <form class="res_block_text">
+        <span class="res_main_text_info">Пожалуйста, загрузите паспорт генерельного директора</span>
+
+        <div class="res_input_file">
+            <span class="btn field_input_field_file res-download">
+                Выберите файл
+                <input type="file" name="file" class="input_field_file"/>
+            </span>
+            <span class="info">jpg, jpeg, pdf, png не более 10 мегабайт</span>
+        </div>
+        <div class="res_help">Копия паспорта генерального директора необходима
+            исключительно для проверки службой безопасности<br>
+            и нигде больше не будет использоваться
+        </div>
+    </form>
+</div>

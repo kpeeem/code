@@ -1,0 +1,75 @@
+<div class="container">
+
+	<div class="tenderCard-scope mt60">
+		<div class="tenders">
+
+				<div class="header">
+		            <div class="title"><%=name%></div><!-- /.title -->
+		            <div class="description"><%=title%></div><!-- /.description -->
+
+		            <ul class="categories mb20">
+						<% _.each(categories, function(category,key) { %>  
+							<li class="icon <%=category.icon%>"><%=category.name%></li>
+						<% }); %>
+		            </ul>
+		            <div class="date mb30 icon res-children">
+		                <%=status%>
+		            </div><!-- /.date -->
+
+					<div class="gradient"></div><!-- /.gradient -->
+		           	<div class="background" style="background-image: url(<%=image%>)"></div>
+		        </div><!-- /.header -->
+
+		        <div class="overview pt60 pb60 white-background clearfix">
+		        	
+		        	<div class="left col-sm-4 nullPaddings col-sm-offset-1">
+		        		<div class="title icon res-children pb30">
+		        			Информация о тендере
+		        		</div><!-- /.title -->
+
+		        		<div class="list pt30">
+			        		<div class="listItem">
+			        			<div class="key owner">Компания-создатель</div><!-- /.key -->
+			        			<div class="value"><%=companyAutor%></div><!-- /.value -->
+			        		</div><!-- /.listItem -->
+							<div class="listItem">
+			        			<div class="key">Максимальная стоимость</div><!-- /.key -->
+			        			<div class="value"><%=maxPrice%></div><!-- /.value -->
+			        		</div><!-- /.listItem -->
+							<div class="listItem">
+			        			<div class="key">Дата завершения приема заявок</div><!-- /.key -->
+			        			<div class="value"><%=offersDateEnd%></div><!-- /.value -->
+							</div><!-- /.listItem -->
+							<div class="listItem">
+			        			<div class="key">Дата завершения тендера</div><!-- /.key -->
+			        			<div class="value"><%=tenderDateEnd%></div><!-- /.value -->
+			        		</div><!-- /.listItem -->
+							<div class="listItem">
+			        			<div class="key">Дата завершения сделки</div><!-- /.key -->
+			        			<div class="value"><%=dealDateEnd%></div><!-- /.value -->
+							</div><!-- /.listItem -->
+						</div><!-- <div class="list pt30"> -->
+						<div class="images pt30">
+							<% _.each(images, function(image,key) { %>  
+			        			<a href="<%=image.image%>" class="image" style="background-image: url(<%=image.thumbImage200x200%>)">
+			        			</a><!-- /.image -->
+			        		<% }); %>
+			        	</div><!-- /.images -->
+			        		
+					</div><!-- /.col-sm-4 -->
+
+		        	<div class="right col-sm-5 nullPaddings col-sm-offset-1">
+		        		<div class="title icon res-children pb30">
+		        			Описание тендера
+		        		</div><!-- /.title -->
+						<div class="description pt30"><%=description%></div><!-- /.description -->
+		        	</div><!-- /.col-sm-5 -->
+
+		        </div><!-- /.info -->
+
+		</div><!-- /.res-card tenders -->
+	</div><!-- /.container slider-scope -->
+
+	
+</div><!-- /.container -->
+

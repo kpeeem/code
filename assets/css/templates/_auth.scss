@@ -1,0 +1,152 @@
+#insert{
+	height: 100%;
+    .registration-scope {
+            margin-top: 70px;
+            margin-bottom: 180px;
+        .form {
+            padding:0;
+            background-color: $white;
+            border-radius: 6px;
+            .notification{
+                padding-bottom: 20px;
+            }
+            .signin_title {
+                padding-top: 48px;
+                margin-bottom: 40px;
+                font-size: 20px;
+            }
+            label{
+            }
+            input {
+               color: #595959;
+                margin: 3px auto;
+                height: 60px;
+                text-align: center;
+                &:focus {
+                    border-color: $grey; //TODO-front уточнить цвет
+                }
+            }
+            button.signUp {
+                width: 100%;
+                text-transform: uppercase;
+            }
+        }
+        .auth-info {
+            margin-top: 40px;
+        }
+    }
+
+    .auth-scope {
+            margin-top: 70px;
+            margin-bottom: 180px;
+        .form {
+            padding:0;
+            background-color: $white;
+            border-radius: 6px;
+            .notification{
+                padding-bottom: 20px;
+            }
+            .signin_title {
+                padding-top: 48px;
+                margin-bottom: 40px;
+                font-size: 20px;
+            }
+            .signin_help {
+                margin-bottom: 40px;
+                width: 90%;
+                margin: 0 auto; 
+                font-size: 15px;
+            }
+            input {
+               color: #595959;
+                margin: 26px auto;
+                //padding: 29px 20px;
+                text-align: center;
+                height: 60px;
+                &:focus {
+                    border-color: $grey; // TODO-front уточнить цвет
+                }
+            }
+            button.signin {
+                width: 100%;
+                text-transform: uppercase;
+            }
+        }
+        .auth-info {
+            margin-top: 40px;
+        }
+    }
+    //forgotPass
+    .forgotPass-scope {
+        margin-top: 70px;
+        margin-bottom: 180px;
+        .form {
+            .wrapper{
+                padding: 47px 20px;
+            }
+            width: 350px;
+            padding:0;
+            background-color: $white;
+            border-radius: 6px;
+            .notification{
+
+            }
+            .title {
+                margin-bottom: 40px;
+                font-size: 20px;
+                font-weight: 700;
+            }
+            .help {
+                margin-bottom: 46px;
+                width: 90%;
+                margin: 0 auto; 
+                font-size: 15px;
+                padding-bottom: 35px;
+            }
+            input {
+                margin: 26px auto;
+                padding: 29px 20px;
+                text-align: center;
+                //@extend .fNormalB;
+                color: $black;
+                font-size: 16px;
+                &:focus {
+                    border-color: $grey; // TODO-front уточнить цвет
+                }
+            }
+            button.sendPass {
+                width: 100%;
+                text-transform: uppercase;
+                //@extend .fNormalB;
+                color: $black;
+            }
+        }
+        .auth-info {
+            margin-top: 40px;
+        }
+    }
+    //forgotPassSuccess
+    .forgotPassSuccess-scope {
+        margin-top: 70px;
+        margin-bottom: 180px;
+        .form{
+            width: 350px;
+            height: 450px;
+            padding:0;
+            background-color: $white;
+            border-radius: 6px;
+            .title {
+                padding-top: 48px;
+                margin-bottom: 40px;
+                font-size: 20px;
+            }
+            .help {
+                margin-bottom: 40px;
+                width: 90%;
+                margin: 0 auto; 
+                font-size: 15px;
+            }
+        }
+        
+    }
+}

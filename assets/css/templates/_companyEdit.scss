@@ -1,0 +1,74 @@
+    .companyEdit-scope{
+        padding: 60px;
+        .wrapper{
+            float: none !important;
+        }
+        h3.h3title-grey{
+            font-size: 16px;
+            margin: 0;
+        }
+        .logo{
+            height: auto;
+            width: 220px;
+            display: block;
+        }
+        .form-control{
+            font-size: 16px;
+        }
+        .form-control-wrapper{
+            position: relative;
+            margin: 0;
+            padding: 0;
+            .info{
+                position: absolute;
+                right: 14px;
+                bottom: 7px;
+                color: $yellow-dark;
+            }
+        }
+        .contactItemBlock{
+            &:last-child{
+                padding-top: 0;
+                margin-top: 0;
+            }
+            h3.h3title-grey{
+                font-size: 14px;
+                color: $grey-dark;
+                display: block;
+                height: 30px;
+            }
+            padding-bottom: 60px;
+
+        }
+        .btn{
+            font-size: 16px;
+        }
+        .preview{
+            display: inline;
+            width: 191px;
+            text-align: center;
+            line-height: 56px;
+            margin-left: 64px;
+            font-size: 16px;
+        }
+        .cancelEdit{
+            margin-left: 70px;
+            font-size: 16px;
+        }
+        .res-fields{
+            font-family: HelveticaMedium;
+            padding-bottom: 30px;
+            .control-label{
+                font-family: HelveticaMedium;
+                height: 30px;
+                padding-top: 7px;
+                margin: 0;
+            }
+            .description{
+                font-family: HelveticaRegular;
+                color:$grey;
+                padding-top: 10px;
+                margin: 0;
+            }
+        }
+    }

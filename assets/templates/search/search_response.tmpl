@@ -1,0 +1,20 @@
+<div class="res-search-response-header"><span><%= name %></span>
+    <a href="">Показать все найденные <%= name %> (<% print(founded.count) %>)</a></div>
+<ul>
+    <% _.each( founded.items, function(item){ %>
+    <li class='res-search-item-element <%= itemName %> <%=categoriesIcons[item.category] %>' company_id ="<% print(item.id) %>">
+        <% print(item.svg) %>
+        <div>
+            <div><span class="res-search-company-name"><%= item.name %></span></div>
+            <ul>
+                <% _.each( item.find , function(find){ %>
+                <li>
+                    <div><% print(find.where)%>:</div>
+                    <div><% print(find.text)%></div>
+                </li>
+                <% }) %>
+            </ul>
+        </div>
+    </li>
+    <% }); %>
+</ul>

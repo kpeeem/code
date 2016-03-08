@@ -1,0 +1,24 @@
+<div class='container manageStaff-scope <% if (results.length == "0") { print("no-staff") } else {print("staff_exists")} %>'>
+    <div class="col-md-10 center-block pt40 wrapper mb60">
+        <div class="h1-font col-md-offset-0">Управление сотрудниками и их доступами в систему RES</div>
+        <hr class="col-md-12 col-md-offset-0">
+        <div class="table">
+            <div class="tr">
+                <div class="th name col-md-3 col-md-offset-0"><span>имя</span></div>
+                <div class="th email col-md-3 col-md-offset-0"><span>адрес электронной почты</span></div>
+                <div class="th role col-md-2 col-md-offset-1"><span>роль</span></div>
+                <div class="th status col-md-2 col-md-offset-0 text-center"><span>статус</span></div>
+                <div class="th more col-md-1 col-md-offset-0"><span>123</span></div>
+            </div>
+            <% _.each(results, function(person) { %>
+            <div class="tr">
+                <div class="td name col-md-3 col-md-offset-0"><span><%= person.name %></span></div>
+                <div class="td email col-md-3 col-md-offset-0"><span><a href="mailto:<%= person.email %>"><%= person.email %></a></span></div>
+                <div class="td role col-md-2 col-md-offset-1"><span><%= person.role %></span></div>
+                <div class="td status col-md-2 col-md-offset-0 text-center"><span><%= person.status %></span></div>
+                <div class="td more col-md-1 col-md-offset-0"><span>123</span></div>
+            </div>
+            <% }); %>
+        </div>
+    </div><!-- /.row -->
+</div>

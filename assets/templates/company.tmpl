@@ -1,0 +1,86 @@
+<% if((companyStatus == 'active')||(companyStatus == 'reg')) { %>
+<div class="container block_company">
+    <div class="row">
+        <div class="res-card col-md-12 res_content ">
+            <div class="row">
+                <div class="col-md-11 col-md-offset-1">
+                    <div class="res_content company_name"><%=name%></div>
+                </div>
+                <div class="col-md-1"></div>
+                <% _.each(categories, function(category) { %>
+                <div class="col-md-2 category icon <%=RES.Env.categoriesIcons[category.pk]%>"><%=category.name%></div>
+                <% }); %>
+                <div class="clearfix"></div>
+                <div class="big_separator col-md-10 col-md-offset-1"></div>
+                <div class="col-md-2 col-md-offset-1 res_left_block">
+                    <img class="logo_company" src='<%=logo%>'/>
+
+                    <div class="achievements">
+                        <% _.each(achievements, function(achievement,key) { %>
+                        <div class="col-md-2 achievements_item <%=RES.Env.achievementIcons[key]%> <%if (achievement.active) {%>active<%}%>">
+                            <div class="description_achievements"><%=achievement.description%></div>
+                        </div>
+                        <% }); %>
+                    </div>
+                    <div class="res_content mini_header">Компания ищет:</div>
+                    <div class="res_content item">
+                        <span>
+                            <% _.each(tags_sell, function(tag_sell) { %>
+                                <%= tag_sell.name%>,
+                            <% }) %>
+                        </span>
+                    </div>
+
+                    <div class="res_content mini_header">Компания предлагает:</div>
+                    <div class="res_content item">
+                        <span>
+                            <% _.each(tags_buy, function(tag_buy) { %>
+                                <%= tag_buy.name%>,
+                            <% }) %>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-7 col-md-offset-1 res_right_block">
+                    <div class="res_description res_content">
+                        <%= description %>
+                    </div>
+                    <div class="res_h3 res_content">Контактные данные</div>
+                    <% if (companyStatus == 'active') { %>
+                    <div id="info_personal"></div>
+
+                    <div class="add_pay res_content"><a class="add_pay_btn">Платёжные реквизиты</a></div>
+                    <div class="clearfix"></div>
+                    <div class="btn create_deals res-button-yellow res-button-big col-md-5">Предложить сделку</div>
+                    <div class="col-md-5 btn_no blocking"><span>Пожаловаться на компанию</span></div>
+                    <% } %>
+                    <% if (companyStatus == 'reg') { %>
+                    <div class="separator_mini"></div>
+                    <div class="clearfix"></div>
+                    <div class="text_info_reg">Для просмотра контактных данных компаний и заключения сделки вам
+                        необходимо
+                        пройти регистрацию в платформе RES.
+                    </div>
+                    <div class="btn create_reg res-button-yellow res-button-big col-md-5">Зарегистрироваться</div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<% } else { %>
+<div class="container block_company">
+    <div class="row">
+        <div class="res-card col-md-12 res_content ">
+            <div class="row">
+                <div class="col-md-11 col-md-offset-1">
+                    <div class="res_content company_name">Профиль компании был заблокирован</div>
+                </div>
+                <div class="big_separator no-top-margin col-md-10 col-md-offset-1"></div>
+                <div class="col-md-2 col-md-offset-1"><a>На главную</a></div>
+                <div class="col-md-2"><a>Авторизоваться</a></div>
+                <div class="pb60 col-md-12"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<% } %>

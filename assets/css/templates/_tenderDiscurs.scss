@@ -1,0 +1,114 @@
+.tenderDiscurs-scope{
+    padding-left:65px;
+    padding-right:65px;
+    padding-bottom: 30px;
+    &>.title{
+        @extend .h2;
+        padding-bottom: 30px;
+    }
+    .btn{
+        width: 220px;
+        margin-bottom: 60px;
+        color:$black;
+    }
+    .comment{
+        &:first-child{
+            padding-top: 60px;
+        }
+        &.reply{
+            padding-bottom: 30px;
+        }
+        padding-top: 30px;
+        .userpic{
+            background-size: cover;
+            border-radius: 100%;
+            width: 60px;
+            height: 60px;
+            margin-right: 30px;
+            padding-bottom: 30px;
+            display: inline-block;
+            background-color: $grey;
+            vertical-align: top;
+        }
+        .comment-container{
+            display: inline-block;
+            width: 885px;
+            .title{
+                .company,.company-at{
+                    display: inline-block;
+                    @extend .links-target-blank-light-bg;
+                    min-height: 30px;
+                    padding-top: 6px;
+                }
+                .company-at{
+                    // @extend .res-system_32_right;
+                    @extend .res-system_16_right;
+                    &:before{
+                        color:$grey;
+                        padding-right: 10px;
+                        padding-left: 6px;
+                    }
+                }
+            }
+            .text{
+                font-size: 14px;
+                padding-bottom: 30px;
+                padding-top: 6px;
+            }
+            .date{
+                display: inline-block;
+                height: 30px;
+                padding-top: 6px;
+                @extend .links-target-self;
+                border-right: 1px solid $black;
+                padding-right: 15px;
+            }
+            .reply{
+                display: inline-block;
+                @extend .links-target-self;
+                padding-left: 15px;
+                &:hover{
+                    color: $blue;
+                }
+            }
+        }
+        
+    }
+    .showMore{
+        @extend .noselect;
+        width: 100%;
+        text-align: center;
+        @extend .links-target-blank-light-bg-big;   
+        margin-top: 30px;
+        margin-bottom: 30px;
+        cursor: pointer;
+    }
+    .add{
+        position: relative;
+        padding-bottom: 30px;
+        label{
+            @extend .links-target-self;
+        }
+        .input-block{
+            height: 60px;
+            position: relative;
+            input{
+                height: 60px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            .reply-to{
+                input{
+
+                }
+            }
+            .at{
+                position: absolute;
+                bottom: 19px;
+                color: $blue;
+                padding-left: 15px;
+            }
+        }
+    }
+
+}

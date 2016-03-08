@@ -1,0 +1,29 @@
+<div class="slider-scope">
+	<div class="res-card tenders slider">
+
+			<% _.each(slides, function(slide,key) { %>  
+
+			<div class="slide">
+	            <div class="title"><%=slide.name%></div><!-- /.title -->
+	            <div class="description"><%=slide.title%></div><!-- /.description -->
+
+	            <ul class="categories mb20">
+					<% _.each(slide.categories, function(category,key) { %>  
+						<li class="icon category.icon"><%=category.name%></li>
+					<% }); %>
+	            </ul>
+	            <div class="date mb60">
+	                <%=slide.date%>
+	            </div><!-- /.date -->
+	            <a href="#tender/<%=slide.pk%>" class="btn res-button-yellow res-button-big">Подробнее</a><!-- /.btn -->
+
+				<div class="gradient"></div><!-- /.gradient -->
+	           	<div class="background" style="background-image: url(<%=slide.image%>)"></div>
+	        </div><!-- /.background -->
+
+			<% }); %>
+	</div><!-- /.res-card tenders -->
+</div><!-- /.container slider-scope -->
+
+
+

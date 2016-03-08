@@ -1,0 +1,154 @@
+.block_representative {
+  & .res_representative_header {
+    @extend .h1-white;
+    margin: 30px 0 10px;
+  }
+  & .separator_gray_light_mini {
+    background: $grey;
+    height: 1px;
+    margin: 10px 0 10px;
+  }
+  & .res-switch-yellow {
+    margin: 0;
+    padding: 0;
+    & li {
+      display: inline-block;
+      &.res_open {
+        & a {
+          & span {
+            color: $yellow;
+          }
+        }
+      }
+      &.res-switch-yellow-active {
+        margin: 20px 0 30px;
+        & a {
+          border: 1px solid $yellow;
+          text-decoration: none;
+          @extend .links-target-blank-dark-bg;
+        }
+      }
+      & a {
+        border: 1px solid transparent;
+        text-decoration: none;
+        display: inline-block;
+        padding: 4px 15px 3px;
+        margin: 0 20px 0 0;
+        border-radius: 4px;
+        @extend .links-target-self;
+      }
+    }
+  }
+  & .res-card-container {
+    & .header_representative_info {
+      margin: 60px 0 50px;
+      @extend .h2-font;
+    }
+  }
+  & .res-card-container {
+    & .header_res_representative {
+      margin: 60px 0 40px;
+      @extend .h2-font;
+    }
+    & .separator_mini {
+    }
+    & .res_representative_input {
+      & .res-fields {
+        &.field_number_tel {
+          visibility: visible;
+          overflow: hidden;
+          height: 171px;
+          margin: 0;
+          & .field_hide {
+            display: inline-block;
+            overflow: hidden;
+            max-height: 0;
+            -webkit-transition: max-height 0.5s ease-out;
+            -moz-transition: max-height 0.5s ease-out;
+            -ms-transition: max-height 0.5s ease-out;
+            -o-transition: max-height 0.5s ease-out;
+            transition: max-height 0.5s ease-out;
+          }
+          &.active {
+            & .field_hide {
+              display: inline-block;
+              visibility: visible;
+              overflow: hidden;
+              max-height: 171px;
+            }
+          }
+        }
+        &.change_number_tel {
+          position: absolute;
+          bottom: 125px;
+          left: 0;
+          visibility: hidden;
+          overflow: hidden;
+          max-height: 0;
+          margin: 0;
+          -webkit-transition: max-height 0.5s ease-in;
+          -moz-transition: max-height 0.5s ease-in;
+          -ms-transition: max-height 0.5s ease-in;
+          -o-transition: max-height 0.5s ease-in;
+          transition: max-height 0.5s ease-in;
+          &.active {
+            visibility: visible;
+            max-height: 171px;
+            margin: 0 0 6px 0;
+          }
+        }
+        margin: 0 0 40px 0;
+        &:nth-child(4) {
+          margin: 0 0 30px 0;
+        }
+        & label {
+          @extend .links-target-self;
+        }
+        & input {
+        }
+        & .description {
+          @extend .text-disabled-light-font;
+          margin-top: 5px;
+        }
+      }
+    }
+    & .res_representative_btn {
+      margin: 20px 0;
+      & .res-button-full {
+
+      }
+      & .btn_no {
+        text-align: left;
+        & .send_sms {
+          opacity: 0;
+          visibility: hidden;
+          -webkit-transition: opacity 0.5s ease-in;
+          -moz-transition: opacity 0.5s ease-in;
+          -ms-transition: opacity 0.5s ease-in;
+          -o-transition: opacity 0.5s ease-in;
+          transition: opacity 0.5s ease-in;
+          &.active {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+        & span {
+          color: $grey;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  & .p-b40 {
+    padding-bottom: 40px;
+  }
+  & .block_info_sms {
+    @extend .standard-text-font;
+    margin: 12px 0 0;
+    & .update_phone {
+      cursor: pointer;
+      color:$blue;
+      display: inline-block;
+    }
+  }
+}

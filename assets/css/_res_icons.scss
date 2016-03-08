@@ -1,0 +1,299 @@
+/* Icon Font: resicons */
+
+@font-face {
+  font-family: "resicons";
+  src: url("./../fonts/icons/resIcons.eot");
+  src: url("./../fonts/icons/resIcons.eot?#iefix") format("embedded-opentype"),
+  url("./../fonts/icons/resIcons.woff") format("woff"),
+  url("./../fonts/icons/resIcons.ttf") format("truetype"),
+  url("./../fonts/icons/resIcons.svg#resicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "resicons";
+    src: url("./../fonts/icons/resIcons.svg#resicons") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.res-category_24_advertising:before,
+.res-category_24_building:before,
+.res-category_24_car:before,
+.res-category_24_children:before,
+.res-category_24_cleaning:before,
+.res-category_24_clothes:before,
+.res-category_24_consalting:before,
+.res-category_24_education:before,
+.res-category_24_food:before,
+.res-category_24_furniture:before,
+.res-category_24_health:before,
+.res-category_24_hotel:before,
+.res-category_24_it:before,
+.res-category_24_keys:before,
+.res-category_24_logistics:before,
+.res-category_24_other:before,
+.res-category_24_party:before,
+.res-category_24_photo:before,
+.res-category_24_production:before,
+.res-category_24_rent:before,
+.res-category_24_safety:before,
+.res-category_24_service:before,
+.res-category_24_shop:before,
+.res-category_24_sport:before,
+.res-category_24_trade:before,
+.res-category_24_washing_mashine:before,
+.res-category_48_advertising:before,
+.res-category_48_building:before,
+.res-category_48_car:before,
+.res-category_48_children:before,
+.res-category_48_cleaning:before,
+.res-category_48_clock:before,
+.res-category_48_clothes:before,
+.res-category_48_complaint:before,
+.res-category_48_consalting:before,
+.res-category_48_education:before,
+.res-category_48_food:before,
+.res-category_48_furniture:before,
+.res-category_48_health:before,
+.res-category_48_hotel:before,
+.res-category_48_it:before,
+.res-category_48_keys:before,
+.res-category_48_logistics:before,
+.res-category_48_other:before,
+.res-category_48_party:before,
+.res-category_48_photo:before,
+.res-category_48_production:before,
+.res-category_48_rent:before,
+.res-category_48_safety:before,
+.res-category_48_service:before,
+.res-category_48_shop:before,
+.res-category_48_sport:before,
+.res-category_48_trade:before,
+.res-category_48_washing_mashine:before,
+.res-company_24_agent:before,
+.res-company_24_deal:before,
+.res-company_24_limit:before,
+.res-company_24_tender:before,
+.res-company_24_winner:before,
+.res-company_32_agent:before,
+.res-company_32_deal:before,
+.res-company_32_limit:before,
+.res-company_32_tender:before,
+.res-company_32_winner:before,
+.res-plan_48_big:before,
+.res-plan_48_business:before,
+.res-plan_48_free:before,
+.res-plan_48_personal:before,
+.res-plan_48_progress:before,
+.res-plan_48_start:before,
+.res-plan_48_startup:before,
+.res-system_16_calendar:before,
+.res-system_16_check:before,
+.res-system_16_check_1:before,
+.res-system_16_clock:before,
+.res-system_16_complaint:before,
+.res-system_16_del:before,
+.res-system_16_dock:before,
+.res-system_16_down:before,
+.res-system_16_download:before,
+.res-system_16_edit:before,
+.res-system_16_filter:before,
+.res-system_16_left:before,
+.res-system_16_like:before,
+.res-system_16_lock:before,
+.res-system_16_mail:before,
+.res-system_16_photo:before,
+.res-system_16_right:before,
+.res-system_16_search:before,
+.res-system_16_settings:before,
+.res-system_16_share:before,
+.res-system_16_unlock:before,
+.res-system_16_up:before,
+.res-system_16_upload:before,
+.res-system_32_calendar:before,
+.res-system_32_check:before,
+.res-system_32_check_1:before,
+.res-system_32_clock:before,
+.res-system_32_complaint:before,
+.res-system_32_delite:before,
+.res-system_32_doc:before,
+.res-system_32_down:before,
+.res-system_32_download:before,
+.res-system_32_edit:before,
+.res-system_32_filter:before,
+.res-system_32_left:before,
+.res-system_32_like:before,
+.res-system_32_lock:before,
+.res-system_32_mail:before,
+.res-system_32_notice:before,
+.res-system_32_photo:before,
+.res-system_32_right:before,
+.res-system_32_search:before,
+.res-system_32_settings:before,
+.res-system_32_share:before,
+.res-system_32_unlock:before,
+.res-system_32_up:before,
+.res-system_32_upload:before,
+.res-system_BIG_AddPhoto:before,
+.res-system_BIG_FB:before,
+.res-system_BIG_ForgotPassDone:before,
+.res-tender_24_close:before,
+.res-tender_24_open:before,
+.res-tender_24_open_1:before,
+.res-tender_24_winner:before,
+.res-tender_48_close:before,
+.res-tender_48_open:before,
+.res-tender_48_open1:before,
+.res-tender_48_winner:before,
+.res-transaction_24_-:before,
+.res-transaction_48_-:before {
+  display: inline-block;
+  font-family: "resicons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.res-category_24_advertising:before { content: "\f179"; }
+.res-category_24_building:before { content: "\f17a"; }
+.res-category_24_car:before { content: "\f17b"; }
+.res-category_24_children:before { content: "\f17c"; }
+.res-category_24_cleaning:before { content: "\f17d"; }
+.res-category_24_clothes:before { content: "\f17e"; }
+.res-category_24_consalting:before { content: "\f17f"; }
+.res-category_24_education:before { content: "\f180"; }
+.res-category_24_food:before { content: "\f181"; }
+.res-category_24_furniture:before { content: "\f182"; }
+.res-category_24_health:before { content: "\f183"; }
+.res-category_24_hotel:before { content: "\f184"; }
+.res-category_24_it:before { content: "\f185"; }
+.res-category_24_keys:before { content: "\f186"; }
+.res-category_24_logistics:before { content: "\f187"; }
+.res-category_24_other:before { content: "\f188"; }
+.res-category_24_party:before { content: "\f189"; }
+.res-category_24_photo:before { content: "\f18a"; }
+.res-category_24_production:before { content: "\f18b"; }
+.res-category_24_rent:before { content: "\f18c"; }
+.res-category_24_safety:before { content: "\f18d"; }
+.res-category_24_service:before { content: "\f18e"; }
+.res-category_24_shop:before { content: "\f18f"; }
+.res-category_24_sport:before { content: "\f190"; }
+.res-category_24_trade:before { content: "\f191"; }
+.res-category_24_washing_mashine:before { content: "\f192"; }
+.res-category_48_advertising:before { content: "\f130"; }
+.res-category_48_building:before { content: "\f131"; }
+.res-category_48_car:before { content: "\f132"; }
+.res-category_48_children:before { content: "\f133"; }
+.res-category_48_cleaning:before { content: "\f134"; }
+.res-category_48_clock:before { content: "\f177"; }
+.res-category_48_clothes:before { content: "\f135"; }
+.res-category_48_complaint:before { content: "\f178"; }
+.res-category_48_consalting:before { content: "\f136"; }
+.res-category_48_education:before { content: "\f137"; }
+.res-category_48_food:before { content: "\f138"; }
+.res-category_48_furniture:before { content: "\f139"; }
+.res-category_48_health:before { content: "\f13a"; }
+.res-category_48_hotel:before { content: "\f13b"; }
+.res-category_48_it:before { content: "\f13c"; }
+.res-category_48_keys:before { content: "\f13d"; }
+.res-category_48_logistics:before { content: "\f13e"; }
+.res-category_48_other:before { content: "\f13f"; }
+.res-category_48_party:before { content: "\f140"; }
+.res-category_48_photo:before { content: "\f141"; }
+.res-category_48_production:before { content: "\f142"; }
+.res-category_48_rent:before { content: "\f143"; }
+.res-category_48_safety:before { content: "\f144"; }
+.res-category_48_service:before { content: "\f145"; }
+.res-category_48_shop:before { content: "\f147"; }
+.res-category_48_sport:before { content: "\f148"; }
+.res-category_48_trade:before { content: "\f149"; }
+.res-category_48_washing_mashine:before { content: "\f14a"; }
+.res-company_24_agent:before { content: "\f193"; }
+.res-company_24_deal:before { content: "\f194"; }
+.res-company_24_limit:before { content: "\f195"; }
+.res-company_24_tender:before { content: "\f196"; }
+.res-company_24_winner:before { content: "\f197"; }
+.res-company_32_agent:before { content: "\f14b"; }
+.res-company_32_deal:before { content: "\f14c"; }
+.res-company_32_limit:before { content: "\f14d"; }
+.res-company_32_tender:before { content: "\f14e"; }
+.res-company_32_winner:before { content: "\f14f"; }
+.res-plan_48_big:before { content: "\f150"; }
+.res-plan_48_business:before { content: "\f151"; }
+.res-plan_48_free:before { content: "\f152"; }
+.res-plan_48_personal:before { content: "\f153"; }
+.res-plan_48_progress:before { content: "\f154"; }
+.res-plan_48_start:before { content: "\f155"; }
+.res-plan_48_startup:before { content: "\f156"; }
+.res-system_16_calendar:before { content: "\f198"; }
+.res-system_16_check:before { content: "\f199"; }
+.res-system_16_check_1:before { content: "\f19a"; }
+.res-system_16_clock:before { content: "\f19b"; }
+.res-system_16_complaint:before { content: "\f19c"; }
+.res-system_16_del:before { content: "\f19d"; }
+.res-system_16_dock:before { content: "\f19e"; }
+.res-system_16_down:before { content: "\f19f"; }
+.res-system_16_download:before { content: "\f1a0"; }
+.res-system_16_edit:before { content: "\f1a1"; }
+.res-system_16_filter:before { content: "\f1a2"; }
+.res-system_16_left:before { content: "\f1a3"; }
+.res-system_16_like:before { content: "\f1a4"; }
+.res-system_16_lock:before { content: "\f1a5"; }
+.res-system_16_mail:before { content: "\f1a6"; }
+.res-system_16_photo:before { content: "\f1a7"; }
+.res-system_16_right:before { content: "\f1a8"; }
+.res-system_16_search:before { content: "\f1a9"; }
+.res-system_16_settings:before { content: "\f1aa"; }
+.res-system_16_share:before { content: "\f1ab"; }
+.res-system_16_unlock:before { content: "\f1ac"; }
+.res-system_16_up:before { content: "\f1ad"; }
+.res-system_16_upload:before { content: "\f1ae"; }
+.res-system_32_calendar:before { content: "\f157"; }
+.res-system_32_check:before { content: "\f158"; }
+.res-system_32_check_1:before { content: "\f159"; }
+.res-system_32_clock:before { content: "\f15a"; }
+.res-system_32_complaint:before { content: "\f15b"; }
+.res-system_32_delite:before { content: "\f15c"; }
+.res-system_32_doc:before { content: "\f15d"; }
+.res-system_32_down:before { content: "\f15e"; }
+.res-system_32_download:before { content: "\f15f"; }
+.res-system_32_edit:before { content: "\f160"; }
+.res-system_32_filter:before { content: "\f161"; }
+.res-system_32_left:before { content: "\f162"; }
+.res-system_32_like:before { content: "\f163"; }
+.res-system_32_lock:before { content: "\f164"; }
+.res-system_32_mail:before { content: "\f165"; }
+.res-system_32_notice:before { content: "\f166"; }
+.res-system_32_photo:before { content: "\f167"; }
+.res-system_32_right:before { content: "\f168"; }
+.res-system_32_search:before { content: "\f169"; }
+.res-system_32_settings:before { content: "\f16a"; }
+.res-system_32_share:before { content: "\f16b"; }
+.res-system_32_unlock:before { content: "\f16c"; }
+.res-system_32_up:before { content: "\f16d"; }
+.res-system_32_upload:before { content: "\f16e"; }
+.res-system_BIG_AddPhoto:before { content: "\f16f"; }
+.res-system_BIG_FB:before { content: "\f170"; }
+.res-system_BIG_ForgotPassDone:before { content: "\f171"; }
+.res-tender_24_close:before { content: "\f1af"; }
+.res-tender_24_open:before { content: "\f1b0"; }
+.res-tender_24_open_1:before { content: "\f1b1"; }
+.res-tender_24_winner:before { content: "\f1b2"; }
+.res-tender_48_close:before { content: "\f172"; }
+.res-tender_48_open:before { content: "\f173"; }
+.res-tender_48_open1:before { content: "\f174"; }
+.res-tender_48_winner:before { content: "\f175"; }
+.res-transaction_24_-:before { content: "\f1b3"; }
+.res-transaction_48_-:before { content: "\f176"; }

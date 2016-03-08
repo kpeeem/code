@@ -1,0 +1,48 @@
+<div class="settingsPersonal-scope white-background res-card-container">
+    <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+            <h1 class="headTitle">Настройка персональных данных</h1><!-- /.headTitle -->
+            <div class="separator mb30 mt30"></div>
+            <div class="listBlock form-group res-fields">
+                <label class="control-label" for="name">Имя</label>
+                <input type="text" maxlength="80" class="form-control" name="firstNameA" id="firstName" value="<% print(first_name) %>">
+                <div class="description">
+                <span>Пожалуйста, укажите ваше имя</span>
+                <span></span>
+                </div><!-- /.description -->
+            </div><!-- /.listBlock -->
+            <div class="listBlock form-group res-fields">
+                <label class="control-label" for="name">Фамилия</label>
+                <input type="text" maxlength="80" class="form-control" name="lastName1" id="lastName" value="<% print(last_name) %>">
+                <div class="description">
+                <span>Пожалуйста, укажите вашу фамилию</span>
+                <span></span>
+                </div><!-- /.description -->
+            </div><!-- /.listBlock -->
+            <div class="listBlock form-group res-fields">
+                <label class="control-label" for="name" >Должность</label>
+                <input type="text" maxlength="40" class="form-control" name="position1" id="position" value="<% print(position) %>">
+                <div class="description">
+                <span>Пожалуйста, укажите вашу должность в компании</span>
+                <span></span>
+                </div><!-- /.description -->
+            </div><!-- /.listBlock -->
+            <div class="separator_mini mb0"></div>
+            <div class="listBlock form-group pt30 res-fields">
+                <label class="control-label" for="name">Роль в аккаунте компании в системе RES</label>
+                <input type="text" class="form-control" name="name" id="name" disabled value="<% print(role) %>">
+                <div class="description pt10">Ваша роль, указанная владельцем аккаунта</div><!-- /.description -->
+            </div><!-- /.listBlock -->
+            <div class="res-fields actions">
+                <button type="button" class="btn save res-button-yellow res-button-big col-sm-4">
+                    Сохранить
+                </button>
+
+                <a class="col-sm-offset-2 res-link-dash-color-gray preview" >Предварительный просмотр</a>
+
+                <a class="cancelEdit res-link-dash-color-red">Отменить редактирование</a>
+            </div>
+        </div>
+    </div>
+
+</div><!-- /.company-scope -->

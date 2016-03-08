@@ -1,0 +1,42 @@
+
+<div class='container manageAdd-scope <% if (results.length == "0") { print("no-staff") } else {print("staff_exists")} %>'>
+    <div class="col-md-10 center-block wrapper">
+        <div class="staff_exists_heading row">
+            <div class="h2-font col-md-12">Добавить сотрудника</div>
+        </div>
+        <div class="no-staff_heading row">
+            <div class="h1-font col-md-offset-0">Управление сотрудниками и их доступами в систему RES</div>
+            <hr class="col-md-12 col-md-offset-0">
+            <div class="do_it standard-text-font col-md-12">Вы пока не добавили ни одного сотрудника
+                к своему аккаунту в системе RES.<br>
+                Сделайте это прямо сейчас, указав адрес электронной почты и роль сотрудника.
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group res-fields col-md-10">
+                <label class="control-label" for="email">Укажите адрес электронной почты сорудника,
+                    на который нужно отправить приглашение в систему RES</label>
+                <input type="text" class="form-control" id="email">
+            </div>
+            <div class="dropdown col-md-10">
+                <div class="why dropdown-component res-fields">
+                    <label for="reason" class="control-label">Укажите роль сотрудника</label>
+                    <a id="reason" class="dropdown reason"></a>
+
+                    <div class="submenu">
+                        <ul class="root">
+                            <li>Первая причина - это ты</li>
+                            <li>А вторая - все твои мечты</li>
+                            <li>Третья - это все твои слова</li>
+                            <li>Четвертая причина - это ложь</li>
+                            <li>А пятая причина - это боль, оттого, что умерла любовь</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <a href="/" class="btn">Отправить приглашение</a>
+            </div>
+        </div>
+    </div>
+</div>

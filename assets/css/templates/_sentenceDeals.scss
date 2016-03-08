@@ -1,0 +1,40 @@
+.block_sentence_deal {
+  & .res_sentence_header {
+    @extend .h1-font;
+    margin: 0 0 30px 0;
+  }
+  & .res_sentence_mini_header {
+    @extend .h2-font;
+    margin: 20px 0 35px;
+    &.gray {
+      color: $grey-dark;
+      margin: 10px 0 35px;
+    }
+  }
+  & .res_sentence_block_company {
+    margin: 0 0 30px 0;
+  }
+  & .res_sentence_name {
+    @extend .h4-font;
+  }
+  & .res_sentence_title {
+    @extend .standard-text-font;
+  }
+  & .res_sentence_info {
+  }
+  & .res_sentence_condition {
+    margin: 10px 0 35px 0;
+    & .res_sentence_text_info {
+      margin: 0 0 5px 0;
+      @extend .links-target-self;
+    }
+  }
+  & .res_sentence_field_input {
+    margin: 10px 0 25px;
+  }
+  & .item_info {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}

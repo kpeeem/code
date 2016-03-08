@@ -1,0 +1,11 @@
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle res-header-nav-dropdown-toggle" data-toggle="dropdown"> <% print(name) %>
+    </a>
+    <ul class="dropdown-menu res-dropdown-menu" role="menu">
+        <% _.each(items, function(name, key){%>
+            <li class="res-navigation-link res-navigation-children-toggle-element"  name="<% print(key) %>">
+                <span><% print(name) %></span>
+            </li>
+        <% }) %>
+    </ul>
+</li>

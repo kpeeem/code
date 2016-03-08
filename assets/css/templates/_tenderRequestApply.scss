@@ -1,0 +1,117 @@
+//tenderRequestApply
+.tenderRequestApply-scope{
+    border-radius: 6px;
+    padding: 0px 65px 60px 65px;
+    .title {
+        @extend .h3;
+        padding-bottom: 60px;
+    }
+    .form-group {
+        margin-bottom: 0px;
+    }
+    .listBlock{
+        padding-bottom: 30px;
+        .description{
+            width: 100%;
+        }
+        .res-select-slide{
+            top: 65px;
+        }
+        label{
+            height: 30px;
+            padding-top:6px;
+            @extend .standard-text-font;
+            display: block;
+            margin-bottom: 0;
+        }
+
+        .description{
+            min-height: 30px;
+            padding-top:6px;
+            color:$grey-dark;
+            width: 730px;
+            &.right-field{
+                display: inline-block;
+                width: 570px;
+                padding-top: 13px;
+            }
+        }
+
+        input{
+            height: 30px;
+            border:1px solid $black;
+            width: 855px;
+            vertical-align: top;
+        }
+        .multiselect{
+            width: 730px;
+            background-color: $white;
+        }
+        input.small{
+            width: 205px;
+            display: inline-block;
+        }
+        input.micro{
+            width: 190px;
+            display: inline-block;
+        }
+        .fieldSet{
+            display: inline-block;
+            width: 100%;
+            height: 60px;
+        }
+        .icon{
+            position: relative;
+            display: inline-block;
+            height: 60px;
+            line-height: 67px;
+            vertical-align: top;
+            padding-left: 15px;
+            font-size: 27px;
+            padding-right: 60px;
+        }
+        .upload{
+            .right-field{
+                display: inline-block;
+                width: 570px;
+                vertical-align: bottom;
+                padding-left: 20px;
+                padding-bottom: 4px;
+                .chooseFile{
+                    margin-left: 12px;
+                    color:$blue;
+                    border-color: $blue;
+                    cursor: pointer;
+                    @extend .res-link-dash;
+                }
+                .fileType{
+                    padding-left: 20px;
+                }
+            }
+            .img{
+                width: 90px;
+                height: 90px;
+                border: 1px dashed $black;
+                border-radius: 6px;
+                display: inline-block;
+                margin-right: 15px;
+                &:before{
+                    font-size: 48px;
+                    text-align: center;
+                    padding-left: 19px;
+                    line-height: 87px;
+                    color:$gray;
+                }
+            }
+        }
+    }
+    .apply{
+        width: 220px;
+        margin-bottom: 30px;
+        @extend .button-text;
+        float: none;
+        margin-top: 30px;
+    }
+    
+
+}

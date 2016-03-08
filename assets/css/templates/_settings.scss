@@ -1,0 +1,307 @@
+#changePassword,
+#changeNumberMobile,
+#headerSetting,
+#lockingCompany{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 100%;
+}
+//settings
+.settings-scope{
+    border-radius: 6px;
+    padding-bottom: 120px;
+    padding-top: 30px;
+    h1,h2,h3,h4,h2.h2{
+      margin:0;
+    }
+    .menuline{
+        width: 100%;
+        height: 30px;
+        margin-bottom: 30px;
+        padding-left: 0px;
+        color:$yellow;
+        li{
+            display: inline-block;
+            span{
+                margin-left: 15px;
+                margin-right: 15px;
+                padding-top: 10px;
+                padding-left: 15px;
+                padding-right: 15px;
+                border-color: $yellow;
+                &.active{
+                    border: 1px solid $yellow;
+                    padding-bottom: 10px;
+                    border-radius: 5px;
+                    a{
+                        color:$yellow;
+                        border: none;                
+                    }
+                }
+                a{
+                    color:$yellow;
+                    border-color: $yellow;             
+                }
+            }
+
+        }
+    }
+
+    .res-select{
+        .res-select-custom-header{
+            cursor: pointer;
+        }
+        ul{
+            box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.52);
+            border-left: 1px solid #000;
+            border-right: 1px solid #000;
+            border-bottom: 1px solid #000;
+            left: -1px;
+        }
+        .res-select-slide{
+                width: 730px;
+                border: none;
+            display: none;
+        }
+    }
+    .listBlock{
+        padding-bottom: 30px;
+        .res-select-slide{
+            top: 65px;
+        }
+        label{
+            height: 30px;
+            padding-top:6px;
+            color:$grey-dark;
+            font-family: HelveticaMedium;
+            display: block;
+        }
+        .description{
+            min-height: 30px;
+            padding-top:6px;
+            color:$grey-dark;
+            width: 730px;
+        }
+        input{
+            height: 30px;
+            border:1px solid $black;
+            width: 730px;
+            vertical-align: top;
+        }
+        .multiselect{
+            width: 730px;
+            background-color: #FFF;
+        }
+        input.small{
+            width: 205px;
+            display: inline-block;
+        }
+        .fieldSet{
+            display: inline-block;
+            width: 100%;
+            height: 60px;
+        }
+        .icon{
+            position: relative;
+            display: inline-block;
+            height: 60px;
+            line-height: 57px;
+            vertical-align: top;
+            padding-left: 15px;
+            font-size: 27px;
+            padding-right: 60px;
+        }
+        textarea{
+            height: 120px;
+            width: 730px;
+            border: 1px solid $black;
+        }
+    }
+    .btn.post{
+        width: 256px;
+        font-family: HelveticaMedium;
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .btn.preview{
+        font-family: HelveticaMedium;
+        font-size: 16px;
+        color:$grey-dark;
+        text-align: center;
+        line-height: 41px;
+        padding-top: 14px;
+        padding-right: 0;
+        border-radius: 0;
+        padding-left: 0;
+        height: 40px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 50px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+
+    }
+    .checkbox-title{
+        font-size: 20px;
+        font-family: HelveticaMedium;
+        height: 30px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        margin-bottom: 60px;
+    }
+    .toggle{
+        padding-bottom: 30px;
+    }
+    h1.headTitle{
+        color: $black;
+        font-family: 'HelveticaLight';
+        font-size: 30px;
+    }
+    .slider{
+        width: 100%;
+        button{
+            background-color: $gray;
+            border-radius: 100%;
+        }
+        .img{
+            width: 475px;
+            background-size: cover;
+            height: 270px;
+            background-repeat: no-repeat;
+            background-position: 50%;
+        }
+        .slick-slide {
+            margin: 0 10px;
+        }
+        /* the parent */
+        .slick-list {
+            margin: 0 -10px;
+        }
+    }
+    .upload{
+        .img{
+            width: 90px;
+            height: 90px;
+            border: 1px dashed $black;
+            border-radius: 6px;
+            display: inline-block;
+            margin-right: 15px;
+            &:before{
+                font-size: 48px;
+                text-align: center;
+                padding-left: 19px;
+                line-height: 87px;
+                color:$gray;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+.settingsPlan-scope{
+    
+}
+
+.settingsPersonal-scope{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    h2.h2{
+        padding-bottom: 30px;
+    }
+    & .separator {
+        background: #808080;
+        height: 1px;
+        width: 100%;
+    }
+    .table{
+        .cell.key{
+            @extend .h4;
+            display: inline-block;
+            width: 315px;
+        }
+        .cell.value{
+            color: $grey;
+            @include fontConstructor("HelveticaNormal", normal, 14, $grey);
+            display: inline-block;
+}
+    }
+    .title{
+        font-size: 30px;
+        font-family: HelveticaThin;
+        color:$black;
+    }
+    .form-group{
+        margin-bottom: 0;
+        .control-label{
+            color:$grey;
+        }
+        input{
+            padding-left: 15px;
+            line-height: 20px;
+        }
+        .description{
+            color:$grey-lighter;
+        }
+    }
+    .res-fields.actions{
+        padding-top: 30px;
+        a{
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn{
+            width: 252px;
+            @extend .button-text;
+        }
+        .preview{
+            display: inline;
+            width: 191px;
+            text-align: center;
+            line-height: 64px;
+            margin-left: 64px;
+            font-size: 16px;
+        }
+        .cancelEdit{
+            margin-left: 70px;
+            font-size: 16px;
+        }
+    }
+    &.preview{
+        background: url("/static/images/preview-background.png");
+        background-size: cover;
+    }
+
+}
+
+.settingsNotifications-scope{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .h2{
+        padding-bottom: 30px;
+    }
+    .listBlock{
+        padding-bottom: 0;
+
+        .res-checkbox{
+            padding-bottom: 30px;
+        }
+    }
+    .btn.save{
+        width: 252px;
+        @extend .button-text;
+    }
+}
+
+.settingsSecurity-scope{
+
+}

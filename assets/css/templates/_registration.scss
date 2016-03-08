@@ -1,0 +1,53 @@
+.block_reg {
+  .block_res_registration {
+    & .header_res_registration {
+      width: 100%;
+      text-align: center;
+      margin: 60px 0 50px;
+      @extend .h2-font;
+    }
+    & .res_reg_input {
+      & .form-group {
+        display: inline-block;
+        min-height: 140px;
+        & label {
+          @extend .text-notification;
+        }
+        & .description{
+          margin-top: 5px;
+          display: inline-block;
+          @extend .text-disabled;
+          & span{
+
+          }
+        }
+      }
+    }
+    & .button_res_registration {
+      width: 100%;
+      height: 60px;
+      position: relative;
+      margin-top: 20px;
+      & .btn {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        @extend .links-target-blank-dark-bg;
+      }
+    }
+  }
+  & .res_block_text_ell {
+    & .res_text_el {
+      margin: 15px 0 30px;
+      @extend .text-disabled-light-font;
+    }
+  }
+  & .separator_mini {
+    background: $grey;
+    height: 1px;
+    width: 30px;
+    margin: 0 0 30px;
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "checksum": {
+    "previous": "66eb7d6abd54f84977dd9790717cf0235cf001a2d80269d015be015e0c019443",
+    "current": "66eb7d6abd54f84977dd9790717cf0235cf001a2d80269d015be015e0c019443"
+  },
+  "fonts": [
+    "fontcustom/fontcustom_66eb7d6abd54f84977dd9790717cf023.ttf",
+    "fontcustom/fontcustom_66eb7d6abd54f84977dd9790717cf023.svg",
+    "fontcustom/fontcustom_66eb7d6abd54f84977dd9790717cf023.woff",
+    "fontcustom/fontcustom_66eb7d6abd54f84977dd9790717cf023.eot"
+  ],
+  "glyphs": {
+    "advertising": {
+      "codepoint": 61696,
+      "source": "./advertising.svg"
+    },
+    "building": {
+      "codepoint": 61697,
+      "source": "./building.svg"
+    },
+    "car": {
+      "codepoint": 61698,
+      "source": "./car.svg"
+    },
+    "children": {
+      "codepoint": 61699,
+      "source": "./children.svg"
+    },
+    "cleaning": {
+      "codepoint": 61700,
+      "source": "./cleaning.svg"
+    },
+    "clothes": {
+      "codepoint": 61701,
+      "source": "./clothes.svg"
+    },
+    "consalting": {
+      "codepoint": 61702,
+      "source": "./consalting.svg"
+    },
+    "education": {
+      "codepoint": 61703,
+      "source": "./education.svg"
+    },
+    "food": {
+      "codepoint": 61704,
+      "source": "./food.svg"
+    },
+    "furniture": {
+      "codepoint": 61705,
+      "source": "./furniture.svg"
+    },
+    "health": {
+      "codepoint": 61706,
+      "source": "./health.svg"
+    },
+    "hotel": {
+      "codepoint": 61707,
+      "source": "./hotel.svg"
+    },
+    "it": {
+      "codepoint": 61708,
+      "source": "./it.svg"
+    },
+    "keys": {
+      "codepoint": 61709,
+      "source": "./keys.svg"
+    },
+    "logistics": {
+      "codepoint": 61710,
+      "source": "./logistics.svg"
+    },
+    "other": {
+      "codepoint": 61711,
+      "source": "./other.svg"
+    },
+    "party": {
+      "codepoint": 61712,
+      "source": "./party.svg"
+    },
+    "photo": {
+      "codepoint": 61713,
+      "source": "./photo.svg"
+    },
+    "production": {
+      "codepoint": 61714,
+      "source": "./production.svg"
+    },
+    "rent": {
+      "codepoint": 61715,
+      "source": "./rent.svg"
+    },
+    "safety": {
+      "codepoint": 61716,
+      "source": "./safety.svg"
+    },
+    "service": {
+      "codepoint": 61717,
+      "source": "./service.svg"
+    },
+    "shop": {
+      "codepoint": 61718,
+      "source": "./shop.svg"
+    },
+    "sport": {
+      "codepoint": 61719,
+      "source": "./sport.svg"
+    },
+    "trade": {
+      "codepoint": 61720,
+      "source": "./trade.svg"
+    },
+    "washing_mashine": {
+      "codepoint": 61721,
+      "source": "./washing_mashine.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": false,
+    "css_selector": ".icon-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "fontcustom",
+    "force": false,
+    "input": {
+      "templates": ".",
+      "vectors": "."
+    },
+    "no_hash": false,
+    "output": {
+      "css": "fontcustom",
+      "fonts": "fontcustom",
+      "preview": "fontcustom"
+    },
+    "preprocessor_path": null,
+    "quiet": false,
+    "templates": [
+      "css",
+      "preview"
+    ]
+  },
+  "templates": [
+    "fontcustom/fontcustom.css",
+    "fontcustom/fontcustom-preview.html"
+  ]
+}

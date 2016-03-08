@@ -1,0 +1,63 @@
+<div class="white-background res-card-container mb30">
+	<div class="row">
+		<div class="tenderSelectWinners-scope">
+			<div class="title">Прием заявок завершен. Выбор победителя</div><!-- /.title -->
+
+			<div class="list-block date">
+				<div class="key">Дата создания тендера</div><!-- /.key -->
+				<div class="value"><%=tenderSelectWinners.date%></div><!-- /.value -->
+			</div><!-- /.list-block -->
+			<h3 class="h3">Поданные заявки</h3><!-- /.title -->
+			<% _.each(tenderSelectWinners.requests, function(item){%>
+			<div class="list-block">
+
+				<div class="list-item">
+					<div class="key"><%=item.name%>"</div><!-- /.key -->
+				</div><!-- /.list-item -->
+					<div class="key">Предложенная стоимость</div><!-- /.key -->
+					<div class="value"><%=item.price%> RES</div><!-- /.key -->				
+				<div class="list-item">
+					<div class="key">Предложенный срок выполнения</div><!-- /.key -->
+					<div class="value"><%=item.deadline%></div><!-- /.key -->
+				</div><!-- /.list-item -->		
+				<%if(item.comment != null){%>
+				<div class="list-item">
+					<div class="key">Комментарий</div><!-- /.key -->
+					<div class="value comment"><%=item.comment%></div><!-- /.key -->
+				</div><!-- /.list-item -->
+				<%}%>
+				<%if(item.images != null){%>
+				<div class="list-item">
+					<div class="key">Изображения</div><!-- /.key -->
+					<div class="value images">
+					<% _.each(item.images, function(item, key){%>
+						<a class="image" href="<%=item.image%>" style="background-image: url('<%=item.thumbImage200x200%>')"></a><!-- /.image -->
+					<%});%>
+					</div><!-- /.key -->
+				</div><!-- /.list-item -->
+				<%}%>
+				<div class="list-item"> <!-- TODO-front:replace maserpage checkbox -->
+					<div class="checkbox"></div><!-- /.checkbox -->
+					<div class="checkbox-label" id="<%=item.id%>">выбрать победителя</div><!-- /.checkbox-label -->
+				</div><!-- /.list-item -->
+
+			</div><!-- /.list-block -->
+			<%});%>
+
+
+			<div class="list-block">
+				<a href="#" class="btn res-button-yellow res-button-big finishTender">Завершить тендер без выбора победителя</a>
+			</div><!-- /.list-block -->
+		</div><!-- /.tenderSendRequests-scope -->
+	</div><!-- /.row -->
+</div><!-- /.form container -->
+
+
+
+
+
+
+
+
+
+			

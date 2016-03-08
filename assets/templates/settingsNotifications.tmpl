@@ -1,0 +1,43 @@
+<div class="settingsNotifications-scope white-background res-card-container">
+    <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+        <h1 class="headTitle pb60">Уведомления</h1><!-- /.headTitle -->
+
+        <h2 class="h2">Адрес электронной почты</h2>
+
+        <div class="listBlock form-group res-fields">
+            <% _.each(email, function(emailItem,key) { %>
+                <div class="res-checkbox">
+                    <input <%if(emailItem.disabled === true){%>disabled<%}%>  <%if(emailItem.checked === true){%>checked<%}%> type="checkbox" name="email<%=key%>"  class="res-checkbox" id="email<%=key%>">
+                    <label class="res-checkbox-label" for="email<%=key%>">
+                        <span class="res-checkbox-mark"></span>
+                        <span class="res-checkbox-label"><%=emailItem.label%></span>
+                    </label>
+                </div>
+            <% }); %>
+        </div><!-- /.listBlock -->
+
+        <h2 class="h2">СМС</h2>
+
+        <div class="listBlock form-group res-fields">
+        <% _.each(sms, function(smsItem,key) { %>
+            <div class="res-checkbox">
+                <input <%if(smsItem.disabled === true){%>disabled<%}%>  <%if(smsItem.checked === true){%>checked<%}%> type="checkbox" name="sms<%=key%>" class="res-checkbox" id="sms<%=key%>">
+                <label class="res-checkbox-label" for="sms<%=key%>">
+                    <span class="res-checkbox-mark"></span>
+                    <span class="res-checkbox-label"><%=smsItem.label%></span>
+                </label>
+            </div>
+        <% }); %>
+        </div><!-- /.listBlock -->
+
+
+
+        <div class="res-fields actions">
+            <button type="button" class="btn save res-button-yellow res-button-big">
+                Сохранить
+            </button>
+        </div>
+    </div>
+        </div>
+</div>

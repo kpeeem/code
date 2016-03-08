@@ -1,0 +1,29 @@
+<span class="res-header-search-panel-icon"></span>
+<div class="res-filter res-header-search-hidden">
+    <div class="res-select-custom-header">
+        <div>
+            <span class="res-select-header-workzone-default">Фильтр по категориям</span>
+            <span class="res-select-header-workzone res-select-header-workzone-hidden"></span>
+        </div>
+        <i></i>
+    </div>
+    <div class="res-select-slide">
+        <ul>
+            <% _.each(collection, function(model){ %>
+            <li category_id="<% print(model.id) %>">
+                <div class="res-filter-icon <% print(categoriesIcons[model.id]) %>"></div>
+                <div><span><% print(model.name) %></span></div>
+                <div class="res-element-status"></div>
+            </li>
+            <% }); %>
+        </ul>
+        <div class="res-select-custom-footer">
+            <div>
+                <div class='res-filter-button' id='res-filter-apply'>Применить</div>
+            </div>
+            <div>
+                <div class='res-filter-button' id='res-filter-clear-all'>Очистить все</div>
+            </div>
+        </div>
+    </div>
+</div>

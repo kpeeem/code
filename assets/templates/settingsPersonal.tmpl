@@ -1,0 +1,32 @@
+<div class="settingsPersonal-scope white-background res-card-container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <h1 class="headTitle" style="word-wrap: break-word;"><% print(first_name) %> <% print(last_name) %></h1><!-- /.headTitle -->
+            <div class="separator mb30 mt30"></div>
+            <h2 class="h2">Персональные данные сотруника</h2><!-- /.h2 -->
+            <div class="table">
+                <div class="row-table">
+                     <div class="cell key">Имя</div><!-- /.cell key -->
+                     <div class="cell value"><% print(first_name) %></div><!-- /.cell value -->
+                </div><!-- /.row-table -->
+                <div class="row-table">
+                     <div class="cell key">Фамилия</div><!-- /.cell key -->
+                     <div class="cell value"><% print(last_name) %></div><!-- /.cell value -->
+                </div><!-- /.row-table -->
+                <div class="row-table">
+                     <div class="cell key">Должность</div><!-- /.cell key -->
+                     <div class="cell value"><% print(position) %></div><!-- /.cell value -->
+                </div><!-- /.row-table -->
+                <div class="row-table">
+                     <div class="cell key">Роль в аккаунте компании в системе RES</div><!-- /.cell key -->
+                     <div class="cell value"><% print(role) %></div><!-- /.cell value -->
+                </div><!-- /.row-table -->
+            </div><!-- /.table -->
+            <div class="res-fields actions">
+                <a type="button" class="btn edit res-button-yellow res-button-big">
+                    Редактировать
+                </a>
+            </div>
+        </div>
+    </div>
+</div><!-- /.company-scope -->

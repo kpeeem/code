@@ -1,0 +1,105 @@
+%res-docs-abstract-row {
+  display: table-row;
+  height: 30px;
+
+  > div {
+    display: table-cell;
+    vertical-align: middle;
+
+
+    &.res-docs-app-links-name{
+      width: 70%;
+
+      a{
+        color: $blue;
+        cursor: pointer;
+        text-decoration: none;
+        @extend .links-target-blank-light-bg-big;
+
+      }
+    }
+
+    &.res-docs-app-links-size{
+      width: 15%;
+      text-align: center;
+      @extend .text-notification;
+    }
+
+    &.res-docs-app-links-download{
+
+      a{
+
+        display: inline;
+        color: $blue;
+        text-decoration: none;
+        cursor: pointer;
+        @extend .links-target-blank-light-bg-big;
+
+        &:before{
+          @extend .icon-example;
+          padding-right: 30px;
+        }
+
+      }
+      width: 15%;
+    }
+  }
+}
+
+.docs-scope {
+  @extend .res-card;
+  background: url("/static/images/doc-background.png");
+  border-radius: 6px;
+
+  ul {
+    padding-left: 0;
+  }
+
+  .wrapper {
+    @extend .col-no-gutter;
+  }
+  h1.headTitle {
+    @extend .h1;
+  }
+
+  .res-docs-headers-ul {
+    margin-bottom: 60px;
+    display: table;
+    width: 100%;
+    li {
+      @extend %res-docs-abstract-row;
+    }
+  }
+
+  .res-docs-app-ul {
+    display: block;
+
+    > li {
+      display: block;
+      margin-top: 30px;
+
+      .res-docs-app-name{
+        height: 30px;
+        line-height: 30px;
+        @extend .h4;
+
+      }
+      .res-docs-app-links {
+
+        display: table ;
+        width: 100% ;
+
+        > li {
+
+          @extend %res-docs-abstract-row;
+
+          div.res-docs-app-links-name{
+            @extend .links-target-blank-light-bg;
+          }
+
+        }
+      }
+    }
+  }
+
+}

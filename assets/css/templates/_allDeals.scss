@@ -1,0 +1,94 @@
+.block_my_deal {
+  display: inline-block;
+  padding: 40px 0 60px;
+  & .separator_gray_light_mini {
+    background: #e5e5e5;
+    height: 1px;
+    margin: 20px 0 20px;
+    &.black {
+      background: #808080;
+    }
+  }
+  & .separator_mini {
+    background: #808080;
+    height: 1px;
+    width: 30px;
+    margin: 0 0 30px;
+  }
+  & .items_deals {
+    & .item_deals {
+      font-family: "HelveticaRegular", Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #1c1c1c;
+      & .time {
+        color: #808080;
+        position: absolute;
+        bottom: -38px;
+        float: right;
+      }
+      &.active {
+        color: #39ce60;
+      }
+    }
+  }
+  & .block_header_deal {
+    & .headers_deal_item {
+      display: inline-block;
+      margin: 7px 0 0 0;
+      & .header_deal_item {
+        font-family: "HelveticaRegular", Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #45a3e5;
+        text-align: center;
+        padding: 8px 0px 6px;
+        &.active {
+          border: 1px solid #45a3e5;
+          padding: 8px 15px 6px;
+          border-radius: 6px;
+          & span {
+            border-bottom: none;
+          }
+        }
+        & span {
+          cursor: pointer;
+          display: inline-block;
+          border-bottom: 1px dotted #45a3e5;
+        }
+      }
+    }
+    & .header_deal {
+      font-family: "HelveticaLight", Helvetica, Arial, sans-serif;
+      color: #565656;
+      margin: 0 0 50px 0;
+      font-size: 30px;
+    }
+  }
+  & .menu_deals {
+    & .menu_item {
+      text-transform: uppercase;
+      font-family: "HelveticaRegular", Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      margin: 0 0 20px 0;
+    }
+    & .menu_deals_line {
+      display: inline-block;
+      width: 100%;
+      padding: 0 15px 6px 15px;
+      margin: 0 0 20px 0;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 15px;
+        right: 15px;
+        height: 6px;
+        background: url(/media/media/bg_gr.png);
+      }
+    }
+  }
+  & .center_text {
+    text-align: center;
+  }
+  & .right_text {
+    text-align: right;
+  }
+}

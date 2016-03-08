@@ -1,0 +1,154 @@
+//font-mixins
+@mixin fontConstructor($family, $weight, $size, $color) {
+  font-family: $family, sans-serif;
+  font-size: $size + px;
+  font-weight: $weight;
+  color: $color;
+}
+
+// в шапке
+.header-font {
+  @include fontConstructor("Roboto", 500, 16, $white);
+  &:hover, &.active {
+    color: $yellow;
+  }
+}
+
+// поиск/фильтр
+.search-filter-font {
+  @include fontConstructor("Roboto", 500, 14, $white);
+}
+
+// в подвале
+.footer-font {
+  @include fontConstructor("Roboto", 400, 14, $grey);
+}
+
+// search in header
+.search-font {
+  @include fontConstructor("Roboto", 400, 16, $grey);
+}
+
+// h1
+.h1, .h1-font {
+  @include fontConstructor("HelveticaLight", normal, 30, $black);
+}
+
+// h1-white
+.h1-white {
+  @include fontConstructor("HelveticaLight", normal, 30, $white);
+}
+
+// h2
+.h2, .h2-font {
+  @include fontConstructor("HelveticaMedium", normal, 20, $black);
+}
+
+// h3
+.h3, .h3-font {
+  @include fontConstructor("HelveticaMedium", normal, 16, $black);
+}
+
+// h4
+.h4, .h4-font {
+  @include fontConstructor("HelveticaMedium", normal, 14, $grey);
+}
+
+// внешние ссылки на светлом фоне
+.links-target-blank-light-bg {
+  @include fontConstructor("HelveticaMedium", normal, 14, $blue);
+}
+
+// внешние ссылки на светлом фоне
+.links-target-blank-light-bg-big {
+  @include fontConstructor("HelveticaMedium", normal, 16, $blue);
+}
+
+// внешние ссылки на темном фоне
+.links-target-blank-dark-bg {
+  @include fontConstructor("HelveticaMedium", normal, 14, $yellow);
+}
+
+// внутренние ссылки
+.links-target-self {
+  @include fontConstructor("HelveticaMedium", normal, 14, $grey);
+}
+
+// текст на кнопках
+.button-text {
+  @include fontConstructor("HelveticaMedium", normal, 16, $black);
+}
+
+// текст на disabled кнопках
+.button-text-disabled {
+  @include fontConstructor("HelveticaMedium", normal, 16, $white);
+}
+
+// стандартный текст
+.standard-text-font {
+  @include fontConstructor("HelveticaRoman", normal, 14, $grey);
+}
+
+// стандартный текст черный
+.standard-text-mini-font {
+  @include fontConstructor("HelveticaRoman", normal, 14, $black);
+}
+
+// "самые важные моменты на странице" (теги, актуальные события, изменения баланса)"
+.important-text-font {
+  @include fontConstructor("HelveticaRoman", normal, 14, $yellow-dark);
+}
+
+// "самые важные моменты на странице размером 16" (теги, актуальные события, изменения баланса)"
+.important-text-big-font {
+  @include fontConstructor("HelveticaRoman", normal, 16, $yellow-dark);
+}
+
+// disabled текст
+.text-disabled {
+  @include fontConstructor("HelveticaRoman", normal, 14, $grey-light);
+  &:hover {
+  }
+}
+
+// disabled текст
+.text-disabled-light-font {
+  @include fontConstructor("HelveticaRoman", normal, 14, $grey-lighter);
+  &:hover {
+  }
+}
+
+// светлый текст в нотификейшне
+.text-notification {
+  @include fontConstructor("HelveticaMedium", normal, 16, $grey);
+}
+
+// links in search
+.text-link-in-search {
+  @include fontConstructor("HelveticaMedium", normal, 16, $yellow);
+}
+
+.text-search-company-name{
+    @include fontConstructor("HelveticaMedium", normal, 20, $grey);
+}
+
+.text-searched-text{
+  @include fontConstructor("HelveticaRoman", normal, 14, $grey);
+
+}
+
+// Search input text
+.text-search-input {
+  @include fontConstructor("HelveticaRoman", normal, 16, $white);
+}
+
+// header of search filter
+.text-header-of-filter {
+  @include fontConstructor("HelveticaRoman", normal, 16, $grey);
+}
+
+
+// res-pagination
+.text-pagination {
+  @include fontConstructor("HelveticaRoman", normal, 18, $grey);
+}

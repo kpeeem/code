@@ -1,0 +1,229 @@
+<div class="container">
+	<div class="tenderCreate-scope white-background res-card-container center-block">
+
+			<h1 class="headTitle pb60">Создание тендера</h1><!-- /.headTitle -->
+
+			<div class="listBlock form-group res-fields">
+				<label class="control-label" for="name">Название тендера</label>
+				<input type="text" class="form-control" id="name" value="<%=createTender.name%>">
+				<div class="description">Название тендера видно всем участникам платформы и 								 отображается в списке тендеров.
+										 Постарайтесь передать им суть предлагаемой задачи.
+				</div><!-- /.description -->
+			</div><!-- /.listBlock -->
+
+			<div class="listBlock form-group res-fields">
+				<label class="control-label" for="description">Описание тендера</label>
+				<textarea type="text" class="form-control" id="description"><%=createTender.description%></textarea> 
+				<div class="description">Описание тендера будет доступно всем участникам 								 платформы со страницы вашего тендера.
+										 Оно должно в деталях отражать суть предлагаемого задания и быть не более 700 символов.
+				</div><!-- /.description -->
+			</div><!-- /.listBlock -->
+			
+			
+			<div class="listBlock form-group res-fields">
+				<label class="control-label" for="name">Категории тендера</label>
+				<!-- <input type="text" class="form-control" id="name"> -->
+
+				<div class="res-select multiselect multiselect-category">
+	                    <div class="res-select-custom-header slidediwn"><i></i>
+	                        <div class="res-select-header-workzone">
+	                            <span class="res-select-header-workzone-default res-select-header-workzone-hidden">Фильтр по категориям</span>
+	                        </div>
+	                     </div>
+	                    <div class="res-select-slide">
+	                        <ul>
+
+	                        	<% _.each(createTender.categories, function(category,key) { %>  
+									<li class="res-active">
+		                                <div class="res-filter-icon <%=category.icon%>">
+		                                </div>
+		                                <div><span><%=category.name%></span></div>
+		                                <div>
+		                                    <div class="res-circle"></div>
+		                                </div>
+		                            </li>
+								<% }); %>
+	                        </ul>
+	                </div>
+	            </div>
+
+				<div class="description">Выберите от одной до трёх категорий вашего тендера, что бы другим участникам платформы было проще его найти.
+				</div><!-- /.description -->
+			</div><!-- /.listBlock -->
+			
+			<div class="listBlock form-group res-fields">
+				<label class="control-label">Выберите иллюстрацию для обложки своего тендера</label>
+				<div class="slider">
+				<% _.each(createTender.imagesCover, function(imagesCoverItem,key) { %>  
+					<div class="img" data-imagesCover='<%=imagesCoverItem.id%>' style="background-image: url(<%=imagesCoverItem.image%>)"></div>
+				<% }); %>
+				</div><!-- /.slider -->
+				<div class="description">Выберите от одной до трёх категорий вашего тендера, чтобы другим участникам платформы было проще его найти.
+				</div><!-- /.description -->
+			</div><!-- /.listBlock -->
+
+			<div class="listBlock form-group res-fields">
+				<label class="control-label" for="maxPrice">Максимальная сумма сделки</label>
+				<input type="text" class="form-control small" id="maxPrice" value="<%=createTender.maxPrice%>">
+				<div class="icon res-children"></div><!-- /.icon -->
+			</div><!-- /.listBlock -->
+
+			<div class="listBlock form-group res-fields">
+				
+					<label class="control-label" for="dateEndRecieveRequests">Дата окончания приема заявок</label>
+					<div class="fieldSet">
+					<input type="text" class="form-control small datepicker" id="dateEndRecieveRequests" value="<%=createTender.dateEndRecieveRequests%>">
+					<div class="icon res-children"></div><!-- /.icon -->
+					<!-- <label class="control-label" for="name">Время окончания приема заявок</label> -->
+					<div class="dropdown-component">
+						<a class="dropdown down"><%=createTender.timeEndRecieveRequests%></a>
+						<div class="submenu">
+							<ul class="root"></ul>
+						</div>
+					</div>
+					<div class="icon res-category_48_clock"></div><!-- /.icon -->
+				</div><!-- /.fieldSet -->
+				<div class="description">Укажите дату и время окончания приема заявок на победу в вашем тендере.
+				</div><!-- /.description -->
+			</div><!-- /.listBlock -->
+
+			<div class="listBlock form-group res-fields">
+					<label class="control-label" for="name">Дата выполненения тендерного задания</label>
+					<div class="fieldSet">
+					<input type="text" class="form-control small datepicker" id="dateEndRecieveRequests" value="<%=createTender.dateEndRecieveRequests%>">
+					<div class="icon res-children"></div><!-- /.icon -->
+
+					<div class="dropdown-component">
+						<a class="dropdown down"><%=createTender.timeDeadlineTender%></a>
+						<div class="submenu">
+							<ul class="root"></ul>
+						</div>
+					</div>
+					<div class="icon res-category_48_clock"></div><!-- /.icon -->
+				</div><!-- /.fieldSet -->
+				<div class="description">Укажите дату и время выполнения тендерного задания
+				</div><!-- /.description -->
+			</div><!-- /.listBlock -->
+
+
+			<div class="listBlock form-group res-fields">
+				<label class="control-label" for="name">Изображение товара</label>
+				<div class="upload">
+					<% _.each(createTender.imagesProduct, function(imagesProductItem,key) { %>  
+						<div class="img res-system_32_photo" data-imagesProduct='<%=imagesProductItem.id%>'>
+							<div class="loaded" style="background-image: url(<%=imagesProductItem.image%>)" ></div><!-- /.loaded -->
+						</div><!-- /.img -->
+					<% }); %>
+				</div><!-- /.slider -->
+				<div class="description">Загрузите иллюстрации, если считаете, что они могут помочь другим участникам в понимании тендера или дальнейшем выполнении задания.
+				</div><!-- /.description -->
+			</div>	
+
+			<div class="checkbox-title">
+				Настройки тендера
+			</div><!-- /.checkbox-title -->
+			
+			<div class="res-ckeckbox-slider-field toggle">
+	            <ul>
+	                <li>
+	                    <div class="res-ckeckbox-slider">
+	                        <input type="checkbox" name="openDiscuss" class="res-ckeckbox-slider-checkbox" id="openDiscuss" <%if(createTender.openDiscuss === true){%>checked<%}%> >
+	                        <label class="res-ckeckbox-slider-label" for="openDiscuss">
+	                            <span class="res-ckeckbox-slider-inner"></span>
+	                            <span class="res-ckeckbox-slider-switch"></span>
+	                        </label>
+	                    </div>
+	                </li>
+	                <li>
+	                    <span>Открытое обсуждение</span>
+	                </li>
+	            </ul>
+	        </div>
+
+			<div class="res-ckeckbox-slider-field toggle">
+	            <ul>
+	                <li>
+	                    <div class="res-ckeckbox-slider">
+	                        <input type="checkbox" 
+	                        name="requestsVisibility" 
+	                        class="res-ckeckbox-slider-checkbox" 
+	                        id="requestsVisibility" 
+	                        <%if(createTender.requestsVisibility === true){%>checked<%}%>>
+
+	                        <label class="res-ckeckbox-slider-label" for="requestsVisibility">
+	                            <span class="res-ckeckbox-slider-inner"></span>
+	                            <span class="res-ckeckbox-slider-switch"></span>
+	                        </label>
+	                    </div>
+	                </li>
+	                <li>
+	                    <span>Другие участники видят поданные заявки</span>
+	                </li>
+	            </ul>
+	        </div>
+
+			<div class="res-ckeckbox-slider-field toggle">
+	            <ul>
+	                <li>
+	                    <div class="res-ckeckbox-slider">
+	                        <input type="checkbox" 
+	                        name="winnerVisibility" 
+	                        class="res-ckeckbox-slider-checkbox" 
+	                        id="winnerVisibility" 
+	                        <%if(createTender.winnerVisibility === true){%>checked<%}%>>
+
+	                        <label class="res-ckeckbox-slider-label" for="winnerVisibility">
+	                            <span class="res-ckeckbox-slider-inner"></span>
+	                            <span class="res-ckeckbox-slider-switch"></span>
+	                        </label>
+	                    </div>
+	                </li>
+	                <li>
+	                    <span>Другие участники видят победителя</span>
+	                </li>
+	            </ul>
+	        </div>
+
+
+			<div class="res-ckeckbox-slider-field toggle">
+	            <ul>
+	                <li>
+	                    <div class="res-ckeckbox-slider">
+	                        <input type="checkbox" 
+	                        name="unregistredVisibility" 
+	                        class="res-ckeckbox-slider-checkbox" 
+	                        id="unregistredVisibility" 
+	                        <%if(createTender.unregistredVisibility === true){%>checked<%}%>>
+
+	                        <label class="res-ckeckbox-slider-label" for="unregistredVisibility">
+	                            <span class="res-ckeckbox-slider-inner"></span>
+	                            <span class="res-ckeckbox-slider-switch"></span>
+	                        </label>
+	                    </div>
+	                </li>
+	                <li>
+	                    <span>Просмотр тендера доступен незарегестрированным пользователям</span>
+	                </li>
+	            </ul>
+	        </div>
+			<button type="button" class="btn post res-button-yellow res-button-big col-sm-4">
+                Опубликовать тендер
+            </button>
+            <div class="btn preview res-link-dash">
+            	Предварительный просмотр
+            </div><!-- /.btn preview -->
+	</div><!-- /.company-scope -->
+</div><!-- /.container -->
+
+
+
+
+
+
+
+
+
+
+
+
+

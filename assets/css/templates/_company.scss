@@ -1,0 +1,168 @@
+.block_company {
+  & .res_content {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+
+    & .separator_mini {
+      background: $gray;
+      height: 1px;
+      width: 30px;
+      margin: 35px 0;
+    }
+
+    & .big_separator {
+      margin-top: 35px;
+      margin-bottom: 35px;
+      &.no-top-margin {
+        margin-top: 0;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        left: 15px;
+        right: 15px;
+        top: 50%;
+        border-bottom: 1px solid $gray;
+      }
+    }
+    & .company_name {
+      @extend .h1;
+      margin-top: 60px;
+      margin-bottom: 30px;
+    }
+
+    & .category {
+      @extend .text-header-of-filter;
+    }
+
+    & .res_left_block {
+      position: relative;
+      margin-bottom: 60px;
+      & img.logo_company {
+        width: 100%;
+        display: inline-block;
+        border-radius: 5px;
+      }
+      & .achievements {
+        position: relative;
+        margin-top: 30px;
+        & .achievements_item {
+          text-align: center;
+          width: 16px;
+          height: 20px;
+          margin: 0 0 0 1px;
+          border: 1px solid $black;
+          & .description_achievements {
+            position: absolute;
+            top: 30px;
+            display: inline-block;
+            left: -5px;
+            width: 210px;
+            height: 0;
+            background: $white;
+            overflow: hidden;
+            z-index: 100;
+            &:after {
+              content: '';
+              position: absolute;
+              left: 2px;
+              top: -24px;
+              border: 12px solid transparent;
+              border-bottom: 13px solid $white;
+            }
+            &:before {
+              content: '';
+              position: absolute;
+              left: 2px;
+              top: -25px;
+              border: 12px solid transparent;
+              border-bottom: 13px solid $black;
+            }
+          }
+          &:hover .description_achievements {
+            height: auto;
+            padding: 10px;
+            border: 1px solid $black;
+            overflow: visible;
+          }
+        }
+      }
+
+      & .mini_header {
+        @extend .h3-font;
+        margin: 30px 0 15px;
+        font-size: 14px;
+      }
+
+      & .item {
+        @extend .important-text-font;
+      }
+    }
+    & .res_right_block {
+      & .res_description {
+        @extend .text-searched-text;
+
+      }
+      & .text_info_reg {
+        @extend .text-searched-text;
+        margin: 0 0 35px 0;
+      }
+      & .res_h3 {
+        margin: 30px 0 0;
+        @extend .h3-font;
+      }
+      & .separator_mini {
+
+      }
+      & .content_info {
+        & .res_header_content_info {
+          margin-bottom: 5px;
+          @extend .h4-font;
+        }
+        & .res_item_content_info {
+          line-height: 29px;
+          & .left_item {
+            letter-spacing: -0.2px;
+            max-width: 200px;
+            @extend .standard-text-font;
+          }
+          & .right_item {
+            @extend .standard-text-font;
+            & a {
+              @extend .links-target-blank-light-bg;
+            }
+          }
+        }
+      }
+      & .add_pay {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        margin: 60px 0 30px;
+        & a {
+          @extend .links-target-blank-light-bg;
+        }
+      }
+      & .create_deals,
+      & .create_reg {
+        max-width: 270px;
+        margin: 0 0 60px;
+      }
+      & .btn_no {
+        background: none;
+        border: none;
+        height: auto;
+        margin: 19px 0 0 15px;
+        & span {
+          border-bottom: 1px dotted $grey;
+          display: inline-block;
+          cursor: pointer;
+          &:hover {
+            border-bottom: 1px solid $grey-blue;
+          }
+        }
+      }
+    }
+  }
+}

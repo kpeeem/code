@@ -1,0 +1,33 @@
+<div class="res-header-search-elements">
+    <div class="res-header-search-elements-menu">
+
+            <div class="res-header-search <% if(!isSubView){print('res-header-search-full')}%>">
+                <span class="res-header-search-panel-icon"></span>
+            </div>
+        <% if(isSubView){%>
+        <div class="res-header-filter" id="res-search-filter">
+        </div>
+        <%}%>
+    </div>
+    <div class="res-search res-header-search-hidden">
+        <div class="input-group res-search-input">
+            <input spellcheck="false" autocorrect="off" type="text" class="form-control " placeholder="Поиск по сайту"
+                   aria-describedby="res-search">
+        </div>
+        <ul class="res-search-response">
+            <li class="res-search-response-empty">
+                <div class="res-search-response-empty-head">Поиск идёт по всем компаниям, тендерам, сделкам.</div>
+                <div class="res-search-response-empty-body">Для того, что бы воспользоваться поиском, просто начните
+                    вводить
+                    свой поисковый запрос в строке поиска.
+                </div>
+            </li>
+            <li class="res-search-response-item res-search-response-company">
+
+            </li>
+            <li class="res-search-response-item res-search-response-tender">
+
+            </li>
+        </ul>
+    </div>
+</div>

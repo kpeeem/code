@@ -1,0 +1,45 @@
+{
+  "name": "assets",
+  "version": "0.0.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.2.1",
+    "bootstrap-sass-official": "~3.3.5",
+    "color-thief": "*",
+    "jquery": "~2.1.4",
+    "modernizr": "~2.8.3",
+    "packery": "~1.4.2",
+    "rivets": "~0.8.1",
+    "slick-carousel": "~1.5.8",
+    "text": "~2.0.14",
+    "backbone.validation": "~0.11.5"
+  },
+  "overrides": {
+    "packery": {
+      "main": [
+        "./dist/packery.pkgd.min.js"
+      ],
+      "dependencies": {},
+      "devDependencies": {}
+    },
+    "jqueryui": {
+      "main": [
+        "../jquery-ui.js"
+      ],
+      "dependencies": {},
+      "devDependencies": {}
+    },
+    "text": {
+      "main": [
+        "."
+      ]
+    }
+  }
+}

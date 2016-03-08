@@ -1,0 +1,164 @@
+.block_law_info {
+  & .res_law_info_header {
+    @extend .h1-white;
+    margin: 30px 0 10px;
+  }
+  & .separator_gray_light_mini {
+    background: $grey;
+    height: 1px;
+    margin: 10px 0 10px;
+  }
+  & .res-switch-yellow {
+    margin: 0;
+    padding: 0;
+    & li {
+      display: inline-block;
+      &.res_open {
+        & a {
+          & span {
+            color: $yellow;
+          }
+        }
+      }
+      &.res-switch-yellow-active {
+        margin: 20px 0 30px;
+        & a {
+          border: 1px solid $yellow;
+          text-decoration: none;
+          @extend .links-target-blank-dark-bg;
+        }
+      }
+      & a {
+        border: 1px solid transparent;
+        text-decoration: none;
+        display: inline-block;
+        padding: 4px 15px 3px;
+        margin: 0 20px 0 0;
+        border-radius: 4px;
+        @extend .links-target-self;
+      }
+    }
+  }
+  & .res-card-container {
+    & .header_res_law_info {
+      margin: 60px 0 40px;
+      @extend .h2;
+    }
+    & .separator_mini {
+    }
+    & .res_law_info_input {
+      & .res-fields {
+        margin: 0 0 40px 0;
+        & label {
+          @extend .links-target-self;
+        }
+        & input {
+        }
+        & .description {
+          @extend .text-disabled-light-font;
+          margin-top: 5px;
+        }
+      }
+    }
+    & .res_law_info_btn {
+      margin: 20px 0;
+      & .res-button-full {
+
+      }
+      & .btn_no {
+        & span {
+          color: $grey;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  & .p-b40 {
+    padding-bottom: 40px;
+  }
+  & .add_passport_user{
+    width: 100%;
+    display: inline-block;
+    max-height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in;
+  }
+  .field_info_res {
+    width: 100%;
+    display: inline-block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in;
+    &.active {
+      max-height: 644px;
+      & .add_passport_user {
+        &.active {
+          visibility: visible;
+          max-height: 194px;
+        }
+      }
+    }
+  }
+  & .btn_update {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in;
+    &.active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  & .res_block_text {
+    margin: 10px 0 50px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    & .res_main_text_info {
+      width: 100%;
+      display: inline-block;
+      @extend .standard-text-font;
+    }
+    & .res_input_file {
+      display: inline-block;
+      margin: 15px 0 10px;
+
+      & .field_input_field_file {
+        display: inline-block;
+        position: relative;
+        width: 160px;
+        height: 20px;
+        overflow: hidden;
+        padding: 1px 0 0;
+        cursor: pointer;
+        color: $blue;
+        &:before {
+          position: absolute;
+          left: 0;
+          top: 0;
+          font-size: 18px;
+        }
+        & .input_field_file {
+          cursor: pointer;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          -webkit-transform: scale(20);
+          -moz-transform: scale(20);
+          -ms-transform: scale(20);
+          -o-transform: scale(20);
+          transform: scale(20);
+          opacity: 0;
+        }
+      }
+    }
+    & .info {
+      @extend .standard-text-font;
+    }
+    & .res_help {
+      @extend .text-disabled;
+    }
+  }
+}

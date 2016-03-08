@@ -1,0 +1,103 @@
+.tenderSendRequests-scope{
+    padding-left:65px;
+    padding-right:65px;
+    padding-bottom: 30px;
+    // margin-bottom: 30px;
+    &>.title{
+        @extend .h2;
+        padding-bottom: 30px;
+    }
+    .h3{
+        margin: 0;
+        padding-top: 30px;
+    }
+    .btn{
+        @extend .button-text;
+        width: 395px;
+        margin-bottom: 30px;
+        color:$black;
+    }
+    .list-block{
+        &.pt0{
+            padding-top:0;
+        }
+        &.pb0{
+            padding-bottom:0;
+        }
+        padding:30px auto;
+        display: block;
+        position: relative;
+        &.date{
+            font-size: 16px;
+        }
+        .strip:before{
+            width: 30px;
+            height: 1px;
+            color:$black;
+            position: absolute;
+            bottom: 0;
+            content: ' ';
+            display: block;
+            background-color: $black;
+        }
+        .showMore{
+            cursor: pointer;
+        }
+        .list-item{
+            display: block;
+            .comment{
+                color:$grey;
+            }
+        }
+        .title{
+            @extend .h3;
+            padding-bottom: 30px;
+            padding-top: 6px;
+        }
+        .key{
+            width: 285px;
+            height: 30px;
+            padding-top: 6px;
+            display: inline-block;
+            vertical-align: top;
+            font-weight: 700;
+        }
+        .value{
+            width: 650px;
+            height: 30px;
+            padding-top: 6px;
+            color:$yellow-dark;
+            display: inline-block;
+            .image{
+                padding-left: 15px;
+                background-size: cover;
+                border-radius: 4px;
+                background-position: 50%;
+                width: 90px;
+                height: 90px;
+                margin-right: 6px;
+                display: inline-block;
+                background-color: $grey;
+            }
+        }
+        .checkbox{
+            width: 30px;
+            height: 30px;
+            border-radius: 3px;
+            border: 1px solid $black;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .checkbox-label{
+            padding-top: 17px;
+            padding-left: 15px;
+            display: inline-block;
+            color:$grey; // TODO-front уточнить
+            vertical-align: top;
+            cursor: pointer;
+        }
+        .btn.close-tender{
+            width: 395px;
+        }
+    }
+}

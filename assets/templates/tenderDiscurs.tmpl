@@ -1,0 +1,42 @@
+<div class="white-background res-card-container mb30">
+	<div class="row">
+		<div class="tenderDiscurs-scope">
+			<div class="title">Обсуждение тендера</div><!-- /.title -->
+			<div class="comment-wrapper">
+			<% _.each(comments, function(comment,key) { %>  
+				<div class="comment <%if(comment.replyName != undefined){%>reply<%}%>">
+					<div class="userpic" style="background-image: url(<%=comment.avatar%>)"></div><!-- /.userpic -->
+					<div class="comment-container">
+						<div class="title">
+							<div class="company">&laquo;<%=comment.name%>&raquo;</div><!-- /.company -->
+							
+							<%if(comment.replyName != undefined){%><div class="company-at">&laquo;<%=comment.replyName%>&raquo;</div><!-- /.company --><%}%>
+						</div><!-- /.title -->
+						<div class="text">
+							<%=comment.text%>
+						</div><!-- /.text -->
+						<div class="date"><%=comment.date%></div><!-- /.date -->
+						<div class="reply" data-id='<%=comment.id%>'>Ответить</div><!-- /.reply -->
+					</div><!-- /.comment-container -->
+					
+				</div><!-- /.comment -->			
+			 <% }); %>   
+			 </div><!-- /.comment-wrapper -->
+				<div class="showMore">Показать еще</div><!-- /.showMore -->
+
+				<div class="add">
+					<label class="control-label" for="addComment">Добавить новый комментарий</label>
+					<div class="input-block">
+						<input type="text" class="form-control" id="addComment">
+						<div class="at">%@ Рога и копыта%</div><!-- /.at -->
+					</div><!-- /.input-block -->
+					
+				</div><!-- /.add -->
+
+			<a href="#" class="btn res-button-yellow res-button-big">Ответить</a>
+		</div><!-- /.tenderSendRequests-scope -->
+	</div><!-- /.row -->
+</div><!-- /.form container -->
+
+
+

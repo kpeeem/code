@@ -1,0 +1,130 @@
+<div class="container">
+	<div class="companyEdit-scope res-card-container">
+		<div class="col-md-10 pb90 wrapper mt30">
+	
+			<h1 class="headTitle pb90">Редактирование профиля компании в каталоге</h1><!-- /.headTitle -->
+
+			<div class="form-group res-fields">
+                <label class="control-label" for="companyName">Название компании</label>
+                <input type="text" class="form-control" id="companyName" value="<%=name%>">
+	            <p class="description">
+	            	Название тендера видно всем участникам платформы и отображается в списке тендеров.<br>
+					Постарайтесь передать им суть предлагаемой задачи.
+	            </p><!-- /.description -->
+            </div>			
+
+			<div class="form-group res-fields">
+                <label class="control-label" for="category">Категории бизнеса</label>
+                <input type="text" class="form-control" id="category"  value="<% _.each(categories, function(category) { %><%=category.name%>,<% }); %>">
+	            <p class="description">
+	            	Выберите от одной до трёх категорий вашего тендера, что бы другим участникам платформы было проще его найти.
+	            </p><!-- /.description -->
+            </div>
+
+			<div class="form-group res-fields ">
+                    <label class="control-label" for="shortDescription">Краткое описание</label>
+                    <div class="form-control-wrapper">
+                    	 <textarea class="form-control" id="shortDescription"><%=description%></textarea>
+                    	<div class="info">Осталось 120 символов</div><!-- /.info -->
+                    </div><!-- /.form-control-wrapper -->
+                   
+                <p class="description">
+	            	Описание тендера будет доступно всем участникам платформы со страницы вашего тендера.
+	            	<br>
+					Оно должно в деталях отражать суть предлагаемого задания и быть не более 100 символов.
+	            </p><!-- /.description -->
+            </div>
+
+			<div class="form-group res-fields">
+                <label class="control-label" for="companyName">Логотип компании</label>
+                <img class="logo" src='<%=logo%>' />
+	            <p class="description">
+	            	Выберите от одной до трёх категорий вашего тендера, что бы другим участникам платформы было проще
+					его найти.
+	            </p><!-- /.description -->
+            </div>
+
+			<div class="form-group res-fields ">
+                    <label class="control-label" for="description">Описание деятельности</label>
+                    <textarea class="form-control" id="description"><%=description%></textarea>
+                <p class="description">
+	            	Описание тендера будет доступно всем участникам платформы со страницы вашего тендера.
+	            	<br>
+					Оно должно в деталях отражать суть предлагаемого задания и быть не более 700 символов.
+	            </p><!-- /.description -->
+            </div>
+
+			<div class="form-group res-fields">
+                <label class="control-label" for="companyName">Продажа</label>
+                <input type="text" class="form-control" id="companyName" value="<% _.each(tags_buy, function(tag_buy) { %><%= tag_buy.name%>,<% }) %>">
+	            <p class="description">
+	            	Название тендера видно всем участникам платформы и отображается в списке тендеров.
+	            	<br>
+					Постарайтесь передать им суть предлагаемой задачи.
+	            </p><!-- /.description -->
+            </div>			
+
+			<div class="form-group res-fields">
+                <label class="control-label" for="companyName">Покупка</label>
+                <input type="text" class="form-control" id="companyName" value="<% _.each(tags_sell, function(tag_sell) { %><%= tag_sell.name%>,<% }) %>">
+	            <p class="description">
+	            	Название тендера видно всем участникам платформы и отображается в списке тендеров.
+	            	<br>
+					Постарайтесь передать им суть предлагаемой задачи.
+	            </p><!-- /.description -->
+            </div>	
+
+			<div class="contactItemBlock">
+				<h3 class="h3title-grey">Общая информация</h3><!-- /.title -->
+
+				<div class="form-group res-fields">
+	                <label class="control-label" for="companyName">Номер компании</label>
+	                <input type="text" class="form-control" id="companyName" value="<%=phone%>">
+	            </div>
+				<div class="form-group res-fields">
+	                <label class="control-label" for="companyName">Фактический адрес</label>
+	                <input type="text" class="form-control" id="companyName" value="<%=legal_address%>">
+	            </div>
+				<div class="form-group res-fields">
+	                <label class="control-label" for="companyName">Адрес электронной почты</label>
+	                <input type="text" class="form-control" id="companyName" value="%email@email.com%">
+	            </div>
+				<div class="form-group res-fields">
+	                <label class="control-label" for="companyName">Адрес сайта</label>
+	                <input type="text" class="form-control" id="companyName" value="<%=site%>">
+	            </div>
+
+				<a class="res-link-dash" href="">Добавить контактные данные</a>
+			</div><!-- /.contactItemBlock -->
+			
+			<div class="contactItemBlock">
+				<h3 class="h3title-grey">Отдел продаж</h3><!-- /.title -->
+				<a class="res-link-dash" href="">Добавить контактные данные</a>
+			</div><!-- /.contactItemBlock -->
+
+			<div class="contactItemBlock">
+				<h3 class="h3title-grey">Юридический отдел</h3><!-- /.title -->
+				<a class="res-link-dash" href="">Добавить контактные данные</a>
+			</div><!-- /.contactItemBlock -->
+			
+
+			<div class="row">
+				<button type="button" class="btn save res-button-yellow res-button-big col-sm-4">
+	                Сохранить
+	            </button>
+
+	            <a href="#" class="col-sm-offset-2 res-link-dash preview">Предварительный просмотр</a>
+
+				<a href="#" class="res-text-pink pt30 cancelEdit">Отменить редактирование</a>
+
+
+			</div><!-- /.row -->
+			
+
+		</div><!-- /.col-md-10 center-block -->
+
+
+	</div><!-- /.company-scope -->
+
+</div><!-- /.container -->
+        

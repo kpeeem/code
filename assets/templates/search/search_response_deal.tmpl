@@ -1,0 +1,14 @@
+    <div class="res-search-response-header">
+        <span>Сделки(<% print(count) %>)</span>
+        <a href="">Показать все найденные сделки</a></div>
+    <ul>
+        <% _.each( items, function(item){ %>
+        <li class='res-search-deal-element' deal_id ="<% print(item.id)%>">
+            <div><span><% print(item.name)%></span></div>
+            <div><span><% print(item.money)%> RES</span></div>
+            <%/*TODO-front color of deal`s status  */%>
+            <div class="res-search-response-deal-cancel"><span><% print(item.status) %></span></div>
+            <div><span><% print(item.date)%></span></div>
+        </li>
+        <% }) %>
+    </ul>

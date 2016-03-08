@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="docs-scope">
+        <div class="col-md-10 center-block pt60 pb90 wrapper mt30 mb60">
+            <h1 class="headTitle pb60">Документы и приложеня</h1><!-- /.headTitle -->
+            <ul class="res-docs-headers-ul">
+
+                <% _.each(docs, function(item){%>
+
+                <li>
+                    <div class="res-docs-app-links-name"><a href="<% item.link %>"><% print(item.name) %></a></div>
+                    <div class="res-docs-app-links-size"><% print(item.size) %>Kb</div>
+                    <div class="res-docs-app-links-download"><a href="<% print(item.link) %>" target="_blank" >Загрузить</a></div>
+                </li>
+
+                <% })%>
+            </ul>
+
+            <ul class="res-docs-app-ul">
+
+                <% _.each(collection, function(items, key){%>
+
+                <li>
+                    <div class="res-docs-app-name">Приложене №<% print(key) %></div>
+                    <ul class="res-docs-app-links">
+                        <% _.each(items, function(item){%>
+                        <li>
+                            <div class="res-docs-app-links-name">
+                                <a href="<% print(item.link) %>"><% print(item.name)%></a>
+                            </div>
+                            <div class="res-docs-app-links-size"><% print(item.size) %>Kb</div>
+                            <div class="res-docs-app-links-download">
+                                <a href="<% print(item.link) %>" target="_blank">Загрузить</a>
+                            </div>
+                        </li>
+                        <% }) %>
+                    </ul>
+                </li>
+                <% }) %>
+            </ul>
+
+        </div>
+        <!-- /.col-md-10 center-block -->
+        <div id="insertSliderBottom"></div>
+        <!-- /.slider -->
+    </div>
+    <!-- /.company-scope -->
+</div><!-- /.container -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+        

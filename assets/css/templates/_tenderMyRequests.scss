@@ -1,0 +1,129 @@
+//tenderCard
+
+.res-card-container{
+    position: relative;
+    overflow: hidden;
+    // padding-top: 0;
+}
+.tenderMyRequests-scope,.tenderMy-scope {
+    border-radius: 6px;
+    padding: 0px 65px 0px 65px;
+    .header {
+        padding-bottom: 30px;
+        .title {
+            font-size: 30px;
+            font-family: HelveticaThin;
+            color: $black;
+            display: inline-block;
+            width: 505px;
+        }
+        .tabs{
+            display: inline-block;
+            text-align: right;
+        }
+    }
+    .createTender{
+        width: 287px;
+        margin-bottom: 30px;
+        font-family: HelveticaBold;
+        float: none;
+        font-size: 16px;
+    }
+    .table {
+        padding-top: 30px;
+        margin-bottom: 0;
+        font-family: HelveticaBold;
+        .title {
+            display: table;
+            border-bottom: 2px solid #b2b2b2; // TODO-front
+            &>div {
+                &.name {
+                    text-align: left;
+                    width: 380px;
+                }
+                font-family: HelveticaBold;
+                height: 30px;
+                text-align: center;
+                font-size: 12px;
+                text-transform: uppercase;
+                padding-top: 6px;
+                color:$gray;
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+        .name {
+            text-align: left;
+            width: 380px;
+        }
+        .maxPrice {
+            width: 205px;
+        }
+        .status {
+            width: 285px;
+        }
+        .dateCreate {
+            width: 133px;
+        }
+        .table-row {
+            height: 60px;
+            display: table;
+            a{
+                text-decoration: underline;
+            }
+            &>div,&>a {
+                font-weight: 700;
+                &.name {
+                    text-align: left;
+                    width: 380px;
+                    color: $blue;
+                    padding:0;
+                }
+                vertical-align: middle;
+                display: table-cell;
+                height: 30px;
+                text-align: center;
+                padding-top: 6px;
+                font-size: 14px;
+                color:grey;
+                &.closeTender{
+                    color:$black;
+                }
+                &.win{
+                    color:$yellow-dark;
+                }
+
+            }
+        }
+    }
+    .empty-text{
+        font-size: 16px;
+        width: 395px;
+        padding-bottom: 60px;
+        color: $grey;
+    }
+
+    .footer-empty{
+        height: 180px;
+        .background {
+            height: 180px;
+            background-image: url("/static/images/My_Tenders_Empty-backgrond.png");
+            width: 100%;
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+        }
+
+        .btn.createTenderEmpty{
+            height: 60px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            z-index: 1;
+            width: 285px;
+            font-family: HelveticaMedium;
+            font-size: 16px;
+            color:$black;
+        }
+    }
+
+}

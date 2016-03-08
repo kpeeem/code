@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="row">
+        <div class="companies-scope">
+            <% for(var companyCard in results.company) { %>
+            <div class="col-sm-4 carditem">
+                <% if(results.company[companyCard].owner) {%>
+                <div href="mycompany" class="card randomBackground owner-true">
+                    <% }else{%>
+                    <div href="company/<%= results.company[companyCard].id %>" class="card randomBackground">
+                        <%} %>
+                        <div class="logo" style="background-image:url(<%= results.company[companyCard].logo %>)"></div>
+                        <div class="name"><%= results.company[companyCard].name %></div>
+                        <div class="description"><%= results.company[companyCard].shotDescription %></div>
+                        <div class="link_container">
+                            <a target='_blank' class="site" href="<%= results.company[companyCard].site %>"><%=
+                                results.company[companyCard].site %></a>
+                        </div>
+                        <div class="res-delimiter">
+                            <div class="line"></div>
+                            <div class="icon"></div>
+                        </div>
+                        <ul class="tags">
+                            <% for(var number_tags in results.company[companyCard].tags) { %>
+                            <li> <%= results.company[companyCard].tags[number_tags] %></li>
+                            <% }%>
+                        </ul>
+                    </div>
+                </div>
+                <% } %>
+
+                <div class="col-sm-4 carditem">
+                    <div class="card last randomBackground">
+                        <div class="paddingWrapper">
+                            <div class="name">Не нашли нужную компанию?</div>
+                            <div class="description">Оставьте заявку, и наши эксперты<br>
+                                по развитию бизнеса обязательно <br>
+                                подключат такой тип бизнеса к RES
+                            </div>
+                            <div class="res-delimiter">
+                                <div class="line"></div>
+                                <div class="icon"></div>
+                            </div>
+                            <div class="res-fields">
+                                <textarea class="form-control" placeholder="Ваш комментарий"></textarea>
+                            </div>
+                        </div>
+                        <button type="button" class="send btn res-button-yellow res-button-middle">
+                            Отправить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bs-component container">
+        <div class="row">
+            <div class="res-pagination">
+                <div class="previous">
+                    <a href="#">Предыдущая</a>
+                </div>
+                <ul>
+                    <li><a href=""><span>1</span></a></li>
+                    <li class="active"><a href=""><span>2</span></a></li>
+                    <li><a href=""><span>3</span></a></li>
+                    <li><a href=""><span>4</span></a></li>
+                    <li class="more"><a href=""><span>...</span></a></li>
+                    <li><a href=""><span>13</span></a></li>
+                    <li><a href=""><span>14</span></a></li>
+                </ul>
+                <div class="next">
+                    <a href="#">Следующая</a>
+                </div>
+            </div>
+        </div>
+    </div>

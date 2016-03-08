@@ -1,0 +1,115 @@
+<div class="block_representative">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="res_representative_header">Регистрация</div>
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-12 separator_gray_light_mini"></div>
+                </div>
+                <div class="col-md-12">
+                    <ul class="res-switch-yellow">
+                        <li class="res_open"><a href="#registration/lawinfo"><span>Юридические данные</span></a></li>
+                        <li class="res_open"><a href="#registration/companyinfo"><span>Информация о компании</span></a>
+                        </li>
+                        <li class="res-switch-yellow-active"><a href="#registration/representative"><span>Информация о представителе</span></a>
+                        </li>
+                        <li><a href="#registration/tariff"><span>Тариф</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <form class="res-card-container p0 mg-b30 p-b40" action="" method="post">
+                <div class="p-lr60">
+                    <div class="row">
+                        <div class="col-md-12 header_res_representative">Расскажите о себе</div>
+                        <div class="col-md-12 res_representative_input">
+                            <div class="row">
+                                <div class="col-md-12 form-group res-fields">
+                                    <label class="control-label">Имя</label>
+                                    <input type="text" value="<%= first_name %>" name="first_name" maxlength="80"
+                                           class="form-control">
+
+                                    <div class="description"><span>Пожалуйста, укажите ваше имя.</span><span></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 form-group res-fields">
+                                    <label class="control-label">Фамилия</label>
+                                    <input type="text" name="last_name" maxlength="80" class="form-control">
+
+                                    <div class="description"><span>Пожалуйста, укажите вашу фамилию.</span><span></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 form-group res-fields">
+                                    <label class="control-label">Адрес электронной почты</label>
+                                    <input type="text" value="<%= email %>" disabled name="email" class="form-control">
+
+                                    <div class="description"><span>Вы сможете сменить адрес электронной почты позже в настройках</span><span></span>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 form-group res-fields">
+                                    <label class="control-label">Должность</label>
+                                    <input type="text" name="role" maxlength="80" class="form-control">
+
+                                    <div class="description"><span>Пожалуйста, укажите вашу должность в копмании.</span><span></span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 form-group res-fields field_number_tel active">
+                                    <div class="row">
+                                        <div class="col-md-12 field_hide">
+                                            <div class="separator_mini"></div>
+                                            <label class="control-label">Номер телефона</label>
+                                            <input type="text" data-mask="phone" value="<%= phone %>" maxlength="16"
+                                                   name="phone_mask"
+                                                   class="form-control">
+                                            <input type="hidden" maxlength="16" name="phone" value="<%= phone %>"
+                                                   class="form-control">
+
+                                            <div class="description"><span>Пожалуйста, укажите ваш номер телефона. Он будет
+                                        использоваться для осуществления безопасности вашего аккаунта</span><span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 form-group res-fields change_number_tel">
+                                    <div class="separator_mini"></div>
+                                    <div class="row">
+                                        <label class="col-md-12 control-label">Введите код</label>
+
+                                        <div class="col-md-3">
+                                            <input type="text" name="code" maxlength="4" class="form-control">
+
+                                            <div class="description"><span></span><span></span></div>
+                                        </div>
+                                        <div class="col-md-9 block_info_sms">Для подсказка подсказка подсказка, введите
+                                            код,<br>
+                                            отправленный SMS-сообщением на номер +7 926 123-45-67.
+                                            <span class="update_phone">Изменить номер телефона</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 res_representative_btn">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <button type="button"
+                                                    class="btn btn_save_number res-button-yellow res-button-big res-button-full">
+                                                Сохранить
+                                            </button>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <div class="btn_no">
+                                                <span class="send_sms">Повторно отправить СMC</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

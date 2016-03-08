@@ -1,0 +1,43 @@
+.block_offerto_deal {
+  & .res_offerto_header {
+    color: $blue;
+    font-family: 'HelveticaLight';
+    font-size: 30px;
+  }
+  & .res_offerto_mini_header {
+    font-family: "HelveticaMedium", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    margin: 20px 0 15px;
+  }
+  & .res_offerto_info_company {
+    margin: 0 0 40px;
+    & .res_offerto_logo {
+      height: 115px;
+      & img {
+        position: absolute;
+        top: 50%;
+        max-width: 265px;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+    }
+    & .res_offerto_info_text {
+    }
+  }
+  & .res_offerto_name_deal {
+    margin: 10px 0;
+  }
+  & .res_offerto_title_deal {
+  }
+  & .res_offerto_priсe {
+    margin: 20px 0 0;
+  }
+  & .res_offerto_list {
+    margin: 60px 0;
+  }
+  & .res_offerto_btn {
+  }
+}
